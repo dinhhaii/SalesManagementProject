@@ -1,0 +1,99 @@
+﻿<Window x:Class="SalesManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement"
+        mc:Ignorable="d"
+        Title="Đăng nhập" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--<Image Source="Resource/bg.png" Grid.Row="1" Grid.Column="0" Stretch="Uniform"></Image>-->
+        <Grid Grid.Column="0" Grid.RowSpan="2">
+            <StackPanel VerticalAlignment="Center" Width="300">
+                <Image Source="Resource/logo1.jpg" Height="80" ></Image>
+
+                <Grid Height="50" Width="250">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="5*" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <materialDesign:PackIcon Margin="10,25,0,0" Width="20" Height="20" Grid.Column="0" Kind="Account" />
+
+                    <!--<Label Target="{Binding ElementName=txtbox}" Grid.Column="1" Margin="0,25,0,0">_Username</Label>-->
+
+                    <TextBox
+                        x:Name="txtbox"
+                        Grid.Column="1"
+                        KeyDown="txtbox_KeyDown"
+                        materialDesign:HintAssist.Hint="Tên đăng nhập"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                </Grid>
+
+                <Grid Height="50" Width="250">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="5*" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <materialDesign:PackIcon Margin="10,25,0,0" Width="20" Height="20" Grid.Column="0" Kind="Key"></materialDesign:PackIcon>
+
+                    <!--<Label Target="{Binding ElementName=passwordBox}" Grid.Column="1" Margin="0,25,0,0">_Password</Label>-->
+
+                    <PasswordBox
+                        x:Name="passwordBox"
+                        KeyDown="passwordBox_KeyDown"
+                        Grid.Column="1"
+                        materialDesign:HintAssist.Hint="Mật khẩu"
+                        Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
+                    </PasswordBox>
+                </Grid>
+
+                <Grid Height="60" Width="100">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ToggleButton
+                        x:Name="toggleButton"
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                        ToolTip="Default ToggleButton Style" />
+                    <TextBlock Text="Quản lý" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                </Grid>
+                
+                <Grid >
+                    <Button
+                        Click="Button_Click"
+                        Content="ĐĂNG NHẬP"
+                        Width="120"
+                        Height="40"
+                        Style="{DynamicResource MaterialDesignRaisedButton}"
+                        materialDesign:ShadowAssist.ShadowDepth="Depth4">
+                    </Button>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Image Source="Resource/logo2.jpg" Stretch="Fill" Grid.Column="1" Grid.RowSpan="2"></Image>
+        
+    </Grid>
+</Window>
+
