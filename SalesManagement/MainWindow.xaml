@@ -25,7 +25,7 @@
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--<Image Source="Resource/bg.png" Grid.Row="1" Grid.Column="0" Stretch="Uniform"></Image>-->
+        <Image Source="Resource/bg.png" Grid.Row="1" Grid.Column="0" Stretch="Uniform"></Image>
         <Grid Grid.Column="0" Grid.RowSpan="2">
             <StackPanel VerticalAlignment="Center" Width="300">
                 <Image Source="Resource/logo1.jpg" Height="80" ></Image>
