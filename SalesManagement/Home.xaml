@@ -1,0 +1,101 @@
+﻿<Window x:Class="SalesManagement.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement"
+        mc:Ignorable="d"
+        Title="Home" Height="600" Width="1000"
+        Closing="Window_Closing"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
+
+    <Grid>
+
+        <Grid Height="50" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="132,50" MappingMode="Absolute" StartPoint="132,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-84.946" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF78798D" Offset="1"/>
+                    <GradientStop Color="#FF151819"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <TextBlock Text="LOGO IN HERE" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25"></TextBlock>
+
+            <materialDesign:Chip
+                HorizontalAlignment="Right"
+                Grid.Column="1"
+                Content="J7 Team"
+                Foreground="White"
+                IconBackground="Gray"
+                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                <materialDesign:Chip.Icon>
+                    <materialDesign:PackIcon
+                    Kind="Account"></materialDesign:PackIcon>
+                </materialDesign:Chip.Icon>
+            </materialDesign:Chip>
+
+            <Button
+                Grid.Column="2"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}">
+                <materialDesign:PackIcon Height="20" Width="20" Kind="Logout"/>
+            </Button>
+        </Grid>
+
+
+        <Grid Margin="0 50 0 0">
+            <dragablz:TabablzControl Name="tabControl">
+                <dragablz:TabablzControl.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF040404"/>
+                        <GradientStop Color="#FF747474" Offset="1"/>
+                    </LinearGradientBrush>
+                </dragablz:TabablzControl.BorderBrush>
+                <dragablz:TabablzControl.InterTabController>
+                    <dragablz:InterTabController/>
+                </dragablz:TabablzControl.InterTabController>
+
+                <TabItem Header="NHẬP">
+                    <local:Nhap />
+                </TabItem>
+                <TabItem Header="BÁN">
+
+                </TabItem>
+                <TabItem Header="THU">
+
+                </TabItem>
+                <TabItem Header="CHI">
+
+                </TabItem>
+                <TabItem Header="THỐNG KÊ">
+
+                </TabItem>
+                <TabItem Header="QUẢN LÝ NHÂN SỰ">
+
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <materialDesign:PackIcon Kind="GithubCircle" Foreground="{DynamicResource PrimaryHueLightBrush}"/>
+                    </TabItem.Header>
+                    <TextBlock Text="github.com/Abel13/TabMenu2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </TabItem>
+            </dragablz:TabablzControl>
+        </Grid>
+    </Grid>
+</Window>

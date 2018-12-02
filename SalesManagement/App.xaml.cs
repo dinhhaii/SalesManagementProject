@@ -13,5 +13,6 @@ namespace SalesManagement
     /// </summary>
     public partial class App : Application
     {
+        static public bool isEmployee { get; set; }
     }
 }
