@@ -64,6 +64,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Ban.xaml.cs">
+      <DependentUpon>Ban.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chi.xaml.cs">
+      <DependentUpon>Chi.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -73,8 +79,25 @@
       <DependentUpon>Nhap.xaml</DependentUpon>
     </Compile>
     <Compile Include="QuanLy.cs" />
+    <Compile Include="QuanLyNhanSu.xaml.cs">
+      <DependentUpon>QuanLyNhanSu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SanPham.cs" />
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="ThongKe.xaml.cs">
+      <DependentUpon>ThongKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Thu.xaml.cs">
+      <DependentUpon>Thu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Ban.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +115,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Nhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuanLyNhanSu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThongKe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Thu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +164,9 @@
     <Resource Include="Resource\logo2.jpg" />
     <Resource Include="Resource\logo3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resource\product1.jpg" />
+    <Resource Include="Resource\product2.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

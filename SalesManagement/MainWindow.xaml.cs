@@ -22,7 +22,6 @@ namespace SalesManagement
     /// </summary>
     public partial class MainWindow : Window
     {
-        string sqlString = @"Data Source=DESKTOP-DINHHAI\SQLEXPRESS;Initial Catalog=SalesManagement;Integrated Security=True";
         SqlConnection sqlConnection = null;
         List<TaiKhoan> listTaiKhoan = new List<TaiKhoan>();
 
@@ -43,10 +42,10 @@ namespace SalesManagement
         }
 
         //Lấy danh sách tài khoản từ CSDL
-        public void getTaiKhoan()
+        public void getData()
         {
-            //Lấy danh sách sản phẩm từ csdl
-            connectSQL(sqlString, out sqlConnection);
+            //Lấy danh sách tài khoản từ csdl
+            connectSQL(App.sqlString, out sqlConnection);
             SqlCommand sqlCom = new SqlCommand();
             sqlCom.CommandType = CommandType.Text;
             sqlCom.CommandText = "select * from TaiKhoan";
@@ -68,9 +67,9 @@ namespace SalesManagement
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Kết nối đến SQL
-            connectSQL(sqlString, out sqlConnection);
+            connectSQL(App.sqlString, out sqlConnection);
             //Lấy dữ liệu tài khoản từ CSDL
-            getTaiKhoan();
+            getData();
 
             int i;
             //Duyệt qua danh sách các tài khoản đang tồn tại trong CSDL

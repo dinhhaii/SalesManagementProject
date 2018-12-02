@@ -47,3 +47,14 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Sales
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Ban.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Chi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Thu.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Ban.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Chi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Thu.baml
