@@ -35,6 +35,7 @@ namespace SalesManagement.ManHinhNhap
             isEditing = false;
             isDelete = false;
             DataGridNhap.ItemsSource = listSP;
+            
 
         }
 
@@ -97,6 +98,7 @@ namespace SalesManagement.ManHinhNhap
             else
             {
                 DataGridNhap.Columns[0].Visibility = Visibility.Collapsed;
+                
                 isDelete = false;
             }
            
@@ -119,6 +121,7 @@ namespace SalesManagement.ManHinhNhap
 
                 int index = row.GetIndex();
                 SanPham itemRow = row.DataContext as SanPham;
+                
                 for(int i = 0; i < listSP.Count; i++)
                 {
                     if (itemRow == listSP[i])
