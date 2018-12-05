@@ -1,11 +1,12 @@
 ﻿
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\App.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\Home.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\MainWindow.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\Nhap.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\Ban.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\Chi.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\QuanLyNhanSu.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\ThongKe.xaml;;
-FC:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\Thu.xaml;;
+FD:\SalesManagement\SalesManagement\App.xaml;;
+FD:\SalesManagement\SalesManagement\Home.xaml;;
+FD:\SalesManagement\SalesManagement\MainWindow.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhBan\Ban.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhChi\Chi.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhNhap\Nhap.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhNhap\ThemSanPham.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhQuanLy\QuanLy.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhThongKe\ThongKe.xaml;;
+FD:\SalesManagement\SalesManagement\ManHinhThu\Thu.xaml;;
 

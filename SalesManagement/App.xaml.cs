@@ -15,5 +15,6 @@ namespace SalesManagement
     {
         static public string sqlString = @"Data Source=DESKTOP-DINHHAI\SQLEXPRESS;Initial Catalog=SalesManagement;Integrated Security=True";
         static public bool isEmployee { get; set; }
+       
     }
 }

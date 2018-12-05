@@ -15,5 +15,6 @@ namespace SalesManagement
         public int SoLuong { get; set; }
         public double Gia { get; set; }
         public DateTime NgayNhap { get; set; }
+        public string DoiTra { get; set; }
     }
 }

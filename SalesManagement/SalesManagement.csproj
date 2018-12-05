@@ -46,6 +46,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -64,40 +66,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Ban.xaml.cs">
-      <DependentUpon>Ban.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Chi.xaml.cs">
-      <DependentUpon>Chi.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="Nhap.xaml.cs">
+    <Compile Include="ManHinhBan\Ban.xaml.cs">
+      <DependentUpon>Ban.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChi\Chi.xaml.cs">
+      <DependentUpon>Chi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhNhap\Nhap.xaml.cs">
       <DependentUpon>Nhap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="QuanLy.cs" />
-    <Compile Include="QuanLyNhanSu.xaml.cs">
-      <DependentUpon>QuanLyNhanSu.xaml</DependentUpon>
+    <Compile Include="ManHinhNhap\ThemSanPham.xaml.cs">
+      <DependentUpon>ThemSanPham.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SanPham.cs" />
-    <Compile Include="TaiKhoan.cs" />
-    <Compile Include="ThongKe.xaml.cs">
+    <Compile Include="ManHinhQuanLy\QuanLy.xaml.cs">
+      <DependentUpon>QuanLy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhThongKe\ThongKe.xaml.cs">
       <DependentUpon>ThongKe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Thu.xaml.cs">
+    <Compile Include="ManHinhThu\Thu.xaml.cs">
       <DependentUpon>Thu.xaml</DependentUpon>
     </Compile>
-    <Page Include="Ban.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Chi.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="QuanLy.cs" />
+    <Compile Include="SanPham.cs" />
+    <Compile Include="TaiKhoan.cs" />
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -114,19 +111,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Nhap.xaml">
+    <Page Include="ManHinhBan\Ban.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="QuanLyNhanSu.xaml">
+    <Page Include="ManHinhChi\Chi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ThongKe.xaml">
+    <Page Include="ManHinhNhap\Nhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Thu.xaml">
+    <Page Include="ManHinhNhap\ThemSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhQuanLy\QuanLy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhThongKe\ThongKe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhThu\Thu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,10 +172,18 @@
     <Resource Include="Resource\logo1.jpg" />
     <Resource Include="Resource\logo2.jpg" />
     <Resource Include="Resource\logo3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resource\product1.jpg" />
     <Resource Include="Resource\product2.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\noimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\product3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\noimage.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManagement"
+        xmlns:mhnhap="clr-namespace:SalesManagement.ManHinhNhap"
+        xmlns:mhban="clr-namespace:SalesManagement.ManHinhBan"
+        xmlns:mhthu="clr-namespace:SalesManagement.ManHinhThu"
+        xmlns:mhchi="clr-namespace:SalesManagement.ManHinhChi"
+        xmlns:mhquanly="clr-namespace:SalesManagement.ManHinhQuanLy"
+        xmlns:mhthongke="clr-namespace:SalesManagement.ManHinhThongKe"
         mc:Ignorable="d"
         Title="Home" Height="600" Width="1000"
+        x:Name="MyHome"
         Closing="Window_Closing"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
@@ -70,22 +77,22 @@
                 </dragablz:TabablzControl.InterTabController>
 
                 <TabItem Header="NHẬP">
-                    <local:Nhap />
+                    <mhnhap:Nhap/>
                 </TabItem>
                 <TabItem Header="BÁN">
-                    <local:Ban />
+                    <mhban:Ban />
                 </TabItem>
                 <TabItem Header="THU">
-                    <local:Thu />
+                    <mhthu:Thu />
                 </TabItem>
                 <TabItem Header="CHI">
-                    <local:Chi />
+                    <mhchi:Chi />
                 </TabItem>
                 <TabItem Header="THỐNG KÊ">
-                    <local:ThongKe />
+                    <mhthongke:ThongKe />
                 </TabItem>
                 <TabItem Header="QUẢN LÝ NHÂN SỰ">
-                    <local:QuanLyNhanSu />
+                    <mhquanly:QuanLy />
                 </TabItem>
                 
                 <TabItem>

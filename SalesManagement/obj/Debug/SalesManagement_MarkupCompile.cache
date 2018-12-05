@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\
+D:\SalesManagement\SalesManagement\obj\Debug\
 SalesManagement
 none
 false
 DEBUG;TRACE
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\App.xaml
-82033355101
+D:\SalesManagement\SalesManagement\App.xaml
+9-604051702
 
-17425227335
-16-234539182
-Ban.xaml;Chi.xaml;Home.xaml;MainWindow.xaml;Nhap.xaml;QuanLyNhanSu.xaml;ThongKe.xaml;Thu.xaml;
+18498897264
+181592754530
+Home.xaml;MainWindow.xaml;ManHinhBan\Ban.xaml;ManHinhChi\Chi.xaml;ManHinhNhap\Nhap.xaml;ManHinhNhap\ThemSanPham.xaml;ManHinhQuanLy\QuanLy.xaml;ManHinhThongKe\ThongKe.xaml;ManHinhThu\Thu.xaml;
 
 False
 
