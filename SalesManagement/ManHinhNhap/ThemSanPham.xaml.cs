@@ -173,6 +173,7 @@ namespace SalesManagement.ManHinhNhap
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             themSP.Close();
+
         }
 
         private void btnAddImage_Click(object sender, RoutedEventArgs e)

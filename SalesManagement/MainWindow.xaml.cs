@@ -156,6 +156,7 @@ namespace SalesManagement
             Home window = new Home();
             loginwindow.Hide();
             window.ShowDialog();
+            
         }
 
 

@@ -95,6 +95,7 @@
     <Compile Include="QuanLy.cs" />
     <Compile Include="SanPham.cs" />
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="VisualTreeHelpers.cs" />
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

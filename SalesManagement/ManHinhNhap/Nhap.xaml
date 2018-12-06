@@ -41,11 +41,10 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
             ColumnWidth="*"
-            SelectedItem="{Binding Path=SelectedSanPham, Mode=TwoWay}"
             CanUserSortColumns="True"
             CanUserAddRows="True"
             AutoGenerateColumns="False"
-            IsReadOnly="True"
+            ScrollViewer.CanContentScroll="False"
             materialDesign:DataGridAssist.CellPadding="13 8 8 8"
             materialDesign:DataGridAssist.ColumnHeaderPadding="8">
 
@@ -61,47 +60,60 @@
 
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
-                    <EventSetter Event="PreviewMouseDown" Handler="DataGridCell_PreviewMouseDown"></EventSetter>
-                
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
                 </Style>
             </DataGrid.CellStyle>
            
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn
-                    Width="80"
+                
+                <!--CHECKBOXCOLUMN--><!--
+                <DataGridCheckBoxColumn Header="A créer ?" Binding="{Binding isChecked, Mode=TwoWay}" Width="80" 
+                                        ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+                                        EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}">
+                    <DataGridCheckBoxColumn.CellStyle>
+                        <Style>
+                            <EventSetter Event="CheckBox.Checked" Handler="OnChecked"/>
+  
+                        </Style>
+                    </DataGridCheckBoxColumn.CellStyle>
+                </DataGridCheckBoxColumn>-->
+
+                <!--CHECKBOX-->
+                <DataGridTemplateColumn 
+                    Header="Hình ảnh"
                     Visibility="Collapsed"
-                    Binding="{Binding IsSelected}"
-                    ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
-                    EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}">
-                    <DataGridCheckBoxColumn.Header>
-                        <!--padding to allow hit test to pass thru for sorting -->
-                        <Border
-                            Background="Transparent"
-                            Padding="6 0 6 0"
-                            HorizontalAlignment="Center">
+                    Width="80">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox
+                                x:Name="checkBoxDeleteAll"
+                                HorizontalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
                             <CheckBox
                                 x:Name="checkBoxDelete"
                                 HorizontalAlignment="Center"
-                                DataContext="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}"
-                                IsChecked="{Binding IsAllItems3Selected}" />
-                        </Border>
-                    </DataGridCheckBoxColumn.Header>
-                </DataGridCheckBoxColumn>
-
+                                IsChecked="{Binding isChecked, Mode=TwoWay}"
+                                Checked="CheckBox_Checked"
+                                Unchecked="CheckBox_Unchecked"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                   
+                    
+                </DataGridTemplateColumn>
+                
+                <!--MÃ SẢN PHẨM-->
                 <DataGridTextColumn
                     Header="Mã sản phẩm"
                     Width="120"
                     Binding="{Binding MaSP}"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                    <DataGridTextColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-                        </Style>
-                    </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
 
-
-                    <DataGridTemplateColumn 
+                <!--HÌNH ẢNH-->
+                <DataGridTemplateColumn 
                     Header="Hình ảnh"
                     Width="250"
                     IsReadOnly="True">
@@ -112,48 +124,45 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
+                <!--TÊN SẢN PHẨM-->
                 <materialDesign:MaterialDataGridTextColumn
                     Width="150"
                     Binding="{Binding TenSP}"
                     Header="Tên sản phẩm"
-                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}" />
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
 
+                <!--SIZE-->
                 <materialDesign:MaterialDataGridTextColumn
                     Binding="{Binding Size}"
                     Width="80"
                     Header="Size"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                    <DataGridTextColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-                        </Style>
-                    </DataGridTextColumn.CellStyle>
                 </materialDesign:MaterialDataGridTextColumn>
 
+                <!--SỐ LƯỢNG-->
                 <materialDesign:MaterialDataGridTextColumn
                     Binding="{Binding SoLuong}"
                     Width="80"
                     Header="Số lượng"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                    <DataGridTextColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-                        </Style>
-                    </DataGridTextColumn.CellStyle>
                 </materialDesign:MaterialDataGridTextColumn>
 
+                <!--GIÁ-->
                 <materialDesign:MaterialDataGridTextColumn
                     Width="120"
                     Binding="{Binding Gia}"
                     Header="Giá"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
 
+                <!--NGÀY NHẬP-->
                 <materialDesign:MaterialDataGridTextColumn
                     Width="120"
                     Binding="{Binding NgayNhap}"
                     Header="Ngày nhập"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
 
+                <!--ĐỔI TRẢ-->
                 <materialDesign:MaterialDataGridTextColumn
                     Width="150"
                     Binding="{Binding DoiTra}"
@@ -170,11 +179,12 @@
             Grid.Column="1" Grid.Row="1" 
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
-            Margin="0,0,10,10"
+            Margin="0,0,25,20"
             Width="50" Height="50"
             Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
             ToolTip="MaterialDesignFloatingActionAccentButton">
             <materialDesign:PackIcon
+                Name="icondeletebtn"
                 Kind="Delete"
                 Height="24"
                 Width="24" />
@@ -186,7 +196,7 @@
             Grid.Column="1" Grid.Row="1" 
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
-            Margin="0,0,70,10"
+            Margin="0,0,85,20"
             Width="50" Height="50"
             Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
             ToolTip="MaterialDesignFloatingActionAccentButton">
@@ -195,7 +205,25 @@
                 Height="24"
                 Width="24" />
         </Button>
-        
+
+        <Button
+            x:Name="btnDelete"
+            Click="btnDelete_Click"
+            Visibility="Collapsed"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="Red"
+            Margin="0,0,85,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Kind="Delete"
+                Height="24"
+                Width="24" />
+        </Button>
+
         <StatusBar Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
             <StatusBarItem>
                 <TextBlock Name="status" ></TextBlock>
