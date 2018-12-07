@@ -34,6 +34,7 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>
         <TextBox FontSize="13" materialDesign:HintAssist.Hint=" Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,2"></TextBox>
         <DataGrid
             Name="DataGridNhap"
@@ -87,6 +88,8 @@
                         <DataTemplate>
                             <CheckBox
                                 x:Name="checkBoxDeleteAll"
+                                Checked="isCheckedOrUnchecked"
+                                Unchecked="isCheckedOrUnchecked"
                                 HorizontalAlignment="Center" />
                         </DataTemplate>
                     </DataGridTemplateColumn.HeaderTemplate>
@@ -152,7 +155,7 @@
                 <materialDesign:MaterialDataGridTextColumn
                     Width="120"
                     Binding="{Binding Gia}"
-                    Header="Giá"
+                    Header="Giá (VNĐ)"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"/>
 
                 <!--NGÀY NHẬP-->

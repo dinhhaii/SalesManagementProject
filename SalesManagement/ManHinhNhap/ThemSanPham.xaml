@@ -70,7 +70,7 @@
             <StackPanel Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <CheckBox
                     x:Name="checkBox1"
-                    IsChecked="True"
+                    IsChecked="False"
                     Margin="10,0,0,10">
                     Đổi trả
                 </CheckBox>

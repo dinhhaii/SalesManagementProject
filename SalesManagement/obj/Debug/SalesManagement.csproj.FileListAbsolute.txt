@@ -225,3 +225,5 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHi
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml

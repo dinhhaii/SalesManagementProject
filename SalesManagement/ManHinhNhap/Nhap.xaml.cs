@@ -83,7 +83,7 @@ namespace SalesManagement.ManHinhNhap
         {
             ThemSanPham window = new ThemSanPham();
             window.ShowDialog();
-;
+            refreshData();
         }
 
         private void btnDeleteProduct_Click(object sender, RoutedEventArgs e)
@@ -119,23 +119,16 @@ namespace SalesManagement.ManHinhNhap
            
         }
 
-        private void btnEditProduct_Click(object sender, RoutedEventArgs e)
-        {
-            isEditing = true;
-            status.Text = "";
-        }
-
         private void DataGridCell_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            DataGridCell myCell = sender as DataGridCell;
+            DataGridRow row = DataGridRow.GetRowContainingElement(myCell);
+
             //Nếu ở chế độ chỉnh sửa
             if (isDelete)
             {
-                //Lấy Cell được chọn
-                DataGridCell myCell = sender as DataGridCell;
-                DataGridRow row = DataGridRow.GetRowContainingElement(myCell);
-                
-                try
-                {
+                //try
+                //{
                     SanPham temp = row.Item as SanPham;
                     
                     for(int i = 0; i < listSP.Count; i++)
@@ -151,20 +144,23 @@ namespace SalesManagement.ManHinhNhap
                             {
                                 listSP[i].isChecked = false;
                             }
-                            DataGridNhap.ItemsSource = null;
-                            DataGridNhap.ItemsSource = listSP;
+                        DataGridNhap.ItemsSource = null;
+                        DataGridNhap.ItemsSource = listSP;
                             break;
                         }
                     }
-                }
-                catch (Exception) { }
-
-                
-
+                //}
+                //catch (Exception) {
+                //    MessageBox.Show("Error");
+                //}
             }
-            if (isEditing)
+            else
             {
-
+                SanPham temp = row.DataContext as SanPham;
+                ChinhSuaSanPham window = new ChinhSuaSanPham(temp.MaSP);
+                //(Application.Current.Windows[4] as ChinhSuaSanPham).editMaSP = temp.MaSP;
+                window.ShowDialog();
+                refreshData();
             }
         }
 
@@ -198,53 +194,97 @@ namespace SalesManagement.ManHinhNhap
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            //Duyệt danh sách listSP và xóa dữ liệu từ Database
+            int count = 0;
             for (int i = 0; i < listSP.Count; i++)
             {
                 if (listSP[i].isChecked == true)
                 {
-                    //listSP.RemoveAt(i);
-                    MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm " + listSP[i].TenSP + " chứ?", "Sales Management", MessageBoxButton.YesNo, MessageBoxImage.Hand);
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        SqlCommand sqlCmd = new SqlCommand();
-                        try
-                        {
-                            connectSQL(App.sqlString, out sqlConnection);
-                            sqlCmd.CommandType = CommandType.Text;
-                            sqlCmd.CommandText = "DELETE FROM SanPham WHERE SanPham.MaSP = '" + listSP[i].MaSP + "'";
-                            sqlCmd.Connection = sqlConnection;
-                            int ret = sqlCmd.ExecuteNonQuery();
-                            if (ret > 0)
-                            {
-                                status.Text = "Xoá thành công";
-                            }
-                            else
-                            {
-                                MessageBox.Show("Xóa không thành công!!");
-                            }
+                    count++;
+                }
+            }
 
-                        }
-                        catch (Exception)
+            //Duyệt danh sách listSP và xóa dữ liệu từ Database
+            if (count > 0)
+            {
+                MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa " + count.ToString() + " sản phẩm chứ?", "Sales Management", MessageBoxButton.YesNo, MessageBoxImage.Hand);
+                if (result == MessageBoxResult.Yes)
+                {
+                    for (int i = 0; i < listSP.Count; i++)
+                    {
+                        if (listSP[i].isChecked == true)
                         {
-                            MessageBox.Show(" Xóa không thành công");
-                        }
-                        finally
-                        {
-                            if (sqlConnection.State == ConnectionState.Open)
-                                sqlConnection.Close();
-                            sqlCmd.Cancel();
+                            //listSP.RemoveAt(i);
+
+                            SqlCommand sqlCmd = new SqlCommand();
+                            try
+                            {
+                                connectSQL(App.sqlString, out sqlConnection);
+                                sqlCmd.CommandType = CommandType.Text;
+                                sqlCmd.CommandText = "DELETE FROM SanPham WHERE SanPham.MaSP = '" + listSP[i].MaSP + "'";
+                                sqlCmd.Connection = sqlConnection;
+                                int ret = sqlCmd.ExecuteNonQuery();
+                                if (ret > 0)
+                                {
+                                    status.Text = "Xoá thành công";
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Xóa không thành công!!");
+                                }
+
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show(" Xóa không thành công");
+                            }
+                            finally
+                            {
+                                if (sqlConnection.State == ConnectionState.Open)
+                                    sqlConnection.Close();
+                                sqlCmd.Cancel();
+                            }
                         }
                     }
                 }
             }
 
             //Reload dữ liệu
-            listSP.Clear();
-            getData();
+            refreshData();
+        }
 
+        private void isCheckedOrUnchecked(object sender, RoutedEventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)e.OriginalSource;
+            if (checkBox.IsChecked == true)
+            {
+                for (int i = 0; i < listSP.Count; i++)
+                {
+                    listSP[i].isChecked = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < listSP.Count; i++)
+                {
+                    listSP[i].isChecked = false;
+                }
+            }
             DataGridNhap.ItemsSource = null;
             DataGridNhap.ItemsSource = listSP;
+        }
+
+        public void refreshData()
+        {
+            listSP.Clear();
+            getData();
+            DataGridNhap.ItemsSource = null;
+            DataGridNhap.ItemsSource = listSP;
+            DataGridNhap.Items.Refresh();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            refreshData();
+
         }
     }
 }

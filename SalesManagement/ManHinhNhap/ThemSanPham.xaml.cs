@@ -16,7 +16,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Collections.ObjectModel;
 using Microsoft.Win32;
-
+using System.Text.RegularExpressions;
 
 namespace SalesManagement.ManHinhNhap
 {
@@ -95,54 +95,67 @@ namespace SalesManagement.ManHinhNhap
 
             }
             SanPham sp = new SanPham();
-            int k = 0;//Kiểm tra nhập đúng hay chưa
+            bool input = true;
             SqlCommand sqlCommand = new SqlCommand();
-            if (duplicate == false)
+
+            if (!IsNumber(txtSoLuong.Text))
             {
-                try
-                {
-                    //Kết nối tới CSDL
-                    connectSQL(App.sqlString, out sqlConnection);
+                MessageBox.Show("Thuộc tính Số lượng nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
+                input = false;
+            }
+            if (!IsNumber(txtGia.Text))
+            {
+                MessageBox.Show("Thuộc tính Giá nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
+                input = false;
+            }
 
-                    sqlCommand.CommandType = CommandType.Text;
-                    //tIỀN HÀNH THÊM DỮ LIỆU VÀO SQL
-                    string sql = "insert into SanPham(MaSP,TenSP,HinhAnhSP,Size,SoLuong,Gia,NgayNhap,DoiTra) values(@MaSP,@tenSP,@HinhAnhSP,@Size,@SoLuong,@Gia,@NgayNhap,@DoiTra)";
-                    sqlCommand.CommandText = sql;
-                    sqlCommand.Connection = sqlConnection;
-                    sqlCommand.Parameters.Add("@MaSP", SqlDbType.NChar).Value = txtMaSP.Text;
-                    sqlCommand.Parameters.Add("@tenSP", SqlDbType.NVarChar).Value = txtTenSP.Text;
+            if (input == true)
+            {
+                if (duplicate == false)
+                {
+                    try
+                    {
+                        //Kết nối tới CSDL
+                        connectSQL(App.sqlString, out sqlConnection);
 
-                    sqlCommand.Parameters.Add("@Size", SqlDbType.NChar).Value = txtSize.Text;
-                    sqlCommand.Parameters.Add("@SoLuong", SqlDbType.Int).Value = int.Parse(txtSoLuong.Text);
-                    sqlCommand.Parameters.Add("@Gia", SqlDbType.Real).Value = float.Parse(txtGia.Text);
-                    sqlCommand.Parameters.Add("@NgayNhap", SqlDbType.Date).Value = datePicker.DisplayDate;
-                    //Nếu đổi trả
-                    if (checkBox1.IsChecked == true)
-                    {
-                        sqlCommand.Parameters.Add("@DoiTra", SqlDbType.NVarChar).Value = txtBoxLyDo.Text;
+                        sqlCommand.CommandType = CommandType.Text;
+                        //tIỀN HÀNH THÊM DỮ LIỆU VÀO SQL
+                        string sql = "insert into SanPham(MaSP,TenSP,HinhAnhSP,Size,SoLuong,Gia,NgayNhap,DoiTra) values(@MaSP,@tenSP,@HinhAnhSP,@Size,@SoLuong,@Gia,@NgayNhap,@DoiTra)";
+                        sqlCommand.CommandText = sql;
+                        sqlCommand.Connection = sqlConnection;
+                        sqlCommand.Parameters.Add("@MaSP", SqlDbType.NChar).Value = txtMaSP.Text;
+                        sqlCommand.Parameters.Add("@tenSP", SqlDbType.NVarChar).Value = txtTenSP.Text;
+
+                        sqlCommand.Parameters.Add("@Size", SqlDbType.NChar).Value = txtSize.Text;
+                        sqlCommand.Parameters.Add("@SoLuong", SqlDbType.Int).Value = int.Parse(txtSoLuong.Text);
+                        sqlCommand.Parameters.Add("@Gia", SqlDbType.Real).Value = float.Parse(txtGia.Text);
+                        sqlCommand.Parameters.Add("@NgayNhap", SqlDbType.Date).Value = datePicker.DisplayDate;
+                        //Nếu đổi trả
+                        if (checkBox1.IsChecked == true)
+                        {
+                            sqlCommand.Parameters.Add("@DoiTra", SqlDbType.NVarChar).Value = txtBoxLyDo.Text;
+                        }
+                        else
+                        {
+                            sqlCommand.Parameters.Add("@DoiTra", SqlDbType.NVarChar).Value = "";
+                        }
+                        if (strfileName != null)
+                        {
+                            sqlCommand.Parameters.Add("@HinhAnhSP", SqlDbType.NChar).Value = strfileName;
+                        }
+                        else
+                        {
+                            sqlCommand.Parameters.Add("@HinhAnhSP", SqlDbType.NChar).Value = "";
+                        }
+
                     }
-                    else
+                    catch (Exception)
                     {
-                        sqlCommand.Parameters.Add("@DoiTra", SqlDbType.NVarChar).Value = "";
+                        //NẾU NHẬP KHÔNG ĐÚNG BÁO LỖI
+                        MessageBox.Show("Thông tin nhập chưa đúng hoặc còn thiếu!!");
                     }
-                    if (strfileName != null)
-                    {
-                        sqlCommand.Parameters.Add("@HinhAnhSP", SqlDbType.NChar).Value = strfileName;
-                    }
-                    else
-                    {
-                        sqlCommand.Parameters.Add("@HinhAnhSP", SqlDbType.NChar).Value = "";
-                    }
-                    k = 1;//Nếu nhập đúng
-                }
-                catch (Exception)
-                {
-                    //NẾU NHẬP KHÔNG ĐÚNG BÁO LỖI
-                    MessageBox.Show("Thông tin đăng nhập chưa đúng hoặc còn thiếu!!");
-                }
-                //Nếu nhập đúng
-                if (k == 1)
-                {
+                    //Nếu nhập đúng
+
                     int ret = sqlCommand.ExecuteNonQuery();
                     if (ret > 0)
                     {
@@ -152,6 +165,7 @@ namespace SalesManagement.ManHinhNhap
                         txtSoLuong.Text = "";
                         txtTenSP.Text = "";
                         txtSize.Text = "";
+                        txtBoxLyDo.Text = "";
                         datePicker.Text = "";
                         if (sqlConnection.State == ConnectionState.Open)
                             sqlConnection.Close();
@@ -193,6 +207,13 @@ namespace SalesManagement.ManHinhNhap
                 bm.EndInit();
                 HinhAnhSP.Source = bm;
             }
+        }
+
+        //Kiếm tra chuỗi nhập có phải là số
+        public bool IsNumber(string pText)
+        {
+            Regex regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
+            return regex.IsMatch(pText);
         }
     }
 }

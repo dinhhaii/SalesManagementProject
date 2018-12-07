@@ -76,6 +76,9 @@
     <Compile Include="ManHinhChi\Chi.xaml.cs">
       <DependentUpon>Chi.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ManHinhNhap\ChinhSuaSanPham.xaml.cs">
+      <DependentUpon>ChinhSuaSanPham.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ManHinhNhap\Nhap.xaml.cs">
       <DependentUpon>Nhap.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ManHinhChi\Chi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhNhap\ChinhSuaSanPham.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
