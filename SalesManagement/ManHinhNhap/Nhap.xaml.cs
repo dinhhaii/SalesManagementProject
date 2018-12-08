@@ -306,16 +306,27 @@ namespace SalesManagement.ManHinhNhap
                 for (int i = 0; i < listSP.Count; i++)
                 {
                     string str = listSP[i].TenSP.Trim().ToLower().Replace(" ", "");
+                    //Tách chuỗi nhập vào thành các từ
+                    string expression = txtSearch.Text.ToLower();
+                    string[] token = expression.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 
-                    if (txtSearch.Text.Trim().ToLower() == listSP[i].TenSP.Substring(0, txtSearch.Text.Length).Trim().ToLower())
+                    int index = 0;
+                    //Duyệt qua mảng các từ trong chuỗi nhập
+                    for (; index < token.Length; index++)
                     {
-                        listSPSearch.Add(listSP[i]);
-                        continue;
+                        //Xóa khoảng trắng
+                        token[index] = token[index].Trim();
+                        //Kiểm tra từ đó xuất hiện trong tên sản phẩm không
+                        int pos = listSP[i].TenSP.ToLower().IndexOf(token[index]);
+                        //Nếu không xuất hiện thì
+                        if (pos < 0)
+                        {
+                            break;
+                        }
                     }
-                    else if (txtSearch.Text.Trim().ToLower() == str.Substring(0, txtSearch.Text.Length))
+                    if(index == token.Length)
                     {
                         listSPSearch.Add(listSP[i]);
-                        continue;
                     }
                 }
 
