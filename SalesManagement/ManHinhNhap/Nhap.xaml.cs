@@ -128,13 +128,13 @@ namespace SalesManagement.ManHinhNhap
             //Nếu ở chế độ chỉnh sửa
             if (isDelete)
             {
-                //try
-                //{
+                try
+                {
                     SanPham temp = row.Item as SanPham;
-                    
-                    for(int i = 0; i < listSP.Count; i++)
+
+                    for (int i = 0; i < listSP.Count; i++)
                     {
-                        if(temp == listSP[i])
+                        if (temp == listSP[i])
                         {
                             //MessageBox.Show(listSP[i].isChecked.ToString());
                             if (listSP[i].isChecked == false)
@@ -145,15 +145,16 @@ namespace SalesManagement.ManHinhNhap
                             {
                                 listSP[i].isChecked = false;
                             }
-                        DataGridNhap.ItemsSource = null;
-                        DataGridNhap.ItemsSource = listSP;
+                            DataGridNhap.ItemsSource = null;
+                            DataGridNhap.ItemsSource = listSP;
                             break;
                         }
                     }
-                //}
-                //catch (Exception) {
-                //    MessageBox.Show("Error");
-                //}
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error");
+                }
             }
             else
             {
