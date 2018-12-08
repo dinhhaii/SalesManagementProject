@@ -14,8 +14,7 @@ namespace SalesManagement
         public string HinhAnhSP { get; set; }
         public string Size { get; set; }
         public int SoLuong { get; set; }
-        public double Gia;
-        public double changedGia { get; set; }
+        public double Gia { get; set; }
         public DateTime NgayNhap { get; set; }
         public string DoiTra { get; set; }
         public bool isSelected = false;

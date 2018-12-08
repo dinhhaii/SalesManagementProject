@@ -25,6 +25,7 @@ namespace SalesManagement.ManHinhNhap
     {
         SqlConnection sqlConnection = null;
         ObservableCollection<SanPham> listSP = new ObservableCollection<SanPham>();
+        ObservableCollection<SanPham> listSPSearch = new ObservableCollection<SanPham>();
         public bool isDelete { get; set; }
         public bool isEditing { get; set; }
 
@@ -284,6 +285,43 @@ namespace SalesManagement.ManHinhNhap
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             refreshData();
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            if (listSPSearch.Count > 0)
+            {//Nếu tìm kiếm sản phẩm khác thì resesst lại list sản phẩm tìm kiếm
+                listSPSearch.Clear();
+            }
+            if (txtSearch.Text.Trim() == "")
+            {
+                DataGridNhap.ItemsSource = null;
+                DataGridNhap.ItemsSource = listSP;
+
+            }
+            else
+            {
+                for (int i = 0; i < listSP.Count; i++)
+                {
+                    string str = listSP[i].TenSP.Trim().ToLower().Replace(" ", "");
+
+                    if (txtSearch.Text.Trim().ToLower() == listSP[i].TenSP.Substring(0, txtSearch.Text.Length).Trim().ToLower())
+                    {
+                        listSPSearch.Add(listSP[i]);
+                        continue;
+                    }
+                    else if (txtSearch.Text.Trim().ToLower() == str.Substring(0, txtSearch.Text.Length))
+                    {
+                        listSPSearch.Add(listSP[i]);
+                        continue;
+                    }
+                }
+
+                DataGridNhap.ItemsSource = null;
+                DataGridNhap.ItemsSource = listSPSearch;
+            }
 
         }
     }

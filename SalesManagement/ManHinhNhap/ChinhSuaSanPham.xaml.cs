@@ -109,7 +109,7 @@ namespace SalesManagement.ManHinhNhap
             sqlConnection.Close();
         }
 
-        private void btnSave_Click(object sender, RoutedEventArgs e)
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
             SanPham sp = new SanPham();
             SqlCommand sqlCmd = new SqlCommand();
@@ -121,13 +121,13 @@ namespace SalesManagement.ManHinhNhap
                 connectSQL(App.sqlString, out sqlConnection);
                 sqlCmd.CommandType = CommandType.Text;
                 bool input = true;
- 
-                if(!IsNumber(txtSoLuong.Text))
+
+                if (!IsNumber(txtSoLuong.Text))
                 {
                     MessageBox.Show("Thuộc tính Số lượng nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
                     input = false;
                 }
-                if(!IsNumber(txtGia.Text))
+                if (!IsNumber(txtGia.Text))
                 {
                     MessageBox.Show("Thuộc tính Giá nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
                     input = false;
@@ -136,7 +136,14 @@ namespace SalesManagement.ManHinhNhap
                 if (input)
                 {
                     //Xóa dữ liệu
-                    sqlCmd.CommandText = "DELETE FROM SanPham WHERE SanPham.MaSP = '" + editMaSP + "'";
+                    StringBuilder cmdtext = new StringBuilder();
+                    cmdtext.Append("DELETE FROM SanPham WHERE SanPham.MaSP = '");
+                    cmdtext.Append(editMaSP);
+                    //cmdtext.Append("'\nDELETE FROM SP_KH WHERE SP_KH.MaSP = '");
+                    //cmdtext.Append(editMaSP);
+                    cmdtext.Append("'");
+
+                    sqlCmd.CommandText = cmdtext.ToString();
                     sqlCmd.Connection = sqlConnection;
                     //Tiến hành xóa dữ liệu
                     int retdelete = sqlCmd.ExecuteNonQuery();
@@ -186,9 +193,9 @@ namespace SalesManagement.ManHinhNhap
             }
             finally
             {
+                sqlCmd.Cancel();
                 if (sqlConnection.State == ConnectionState.Open)
                     sqlConnection.Close();
-                sqlCmd.Cancel();
             }
 
         }

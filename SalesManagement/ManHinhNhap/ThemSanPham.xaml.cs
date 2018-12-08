@@ -98,14 +98,9 @@ namespace SalesManagement.ManHinhNhap
             bool input = true;
             SqlCommand sqlCommand = new SqlCommand();
 
-            if (!IsNumber(txtSoLuong.Text))
+            if (!IsNumber(txtSoLuong.Text) || !IsNumber(txtGia.Text))
             {
-                MessageBox.Show("Thuộc tính Số lượng nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
-                input = false;
-            }
-            if (!IsNumber(txtGia.Text))
-            {
-                MessageBox.Show("Thuộc tính Giá nhập chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Thông tin nhập thiếu hoặc chưa đúng. Vui lòng nhập lại!", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Error);
                 input = false;
             }
 
@@ -177,10 +172,6 @@ namespace SalesManagement.ManHinhNhap
                     }
 
                 }
-            }
-            else
-            {
-                MessageBox.Show("Nhập trùng mã sản phẩm, xin vui lòng nhập lại!!");
             }
         }
 

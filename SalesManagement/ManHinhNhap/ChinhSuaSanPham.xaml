@@ -174,11 +174,11 @@
             </Grid.ColumnDefinitions>
             <Button 
                 Name="btnSave"
-                Click="btnSave_Click"
+                Click="btnUpdate_Click"
                 Width="150"
                 Style="{DynamicResource MaterialDesignRaisedButton}"
                 materialDesign:ShadowAssist.ShadowDepth="Depth4">
-                Lưu lại
+                Cập nhật
             </Button>
 
             <Button

@@ -35,7 +35,7 @@
         </Grid.RowDefinitions>
 
         <Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>
-        <TextBox FontSize="13" materialDesign:HintAssist.Hint=" Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,2"></TextBox>
+        <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
         <DataGrid
             Name="DataGridNhap"
             Grid.ColumnSpan="3" Grid.Row="1"
