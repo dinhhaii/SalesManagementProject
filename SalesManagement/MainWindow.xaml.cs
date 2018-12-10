@@ -24,6 +24,7 @@ namespace SalesManagement
     {
         SqlConnection sqlConnection = null;
         List<TaiKhoan> listTaiKhoan = new List<TaiKhoan>();
+        private string MaNV { get; set; }
 
         public MainWindow()
         {
@@ -85,6 +86,7 @@ namespace SalesManagement
                         if (passwordBox.Password == listTaiKhoan[i].MatKhau.Trim()) 
                         {
                             App.isEmployee = false;
+                            MaNV = listTaiKhoan[i].MaNV;
                             showHomeWindow();
                         }
                         else
@@ -99,6 +101,7 @@ namespace SalesManagement
                         if (passwordBox.Password == listTaiKhoan[i].MatKhau.Trim())
                         {
                             App.isEmployee = true;
+                            MaNV = listTaiKhoan[i].MaNV;
                             showHomeWindow();
                         }
                         else
@@ -153,7 +156,7 @@ namespace SalesManagement
 
         public void showHomeWindow()
         {
-            Home window = new Home();
+            Home window = new Home(MaNV);
             loginwindow.Hide();
             window.ShowDialog();
             

@@ -74,7 +74,10 @@ namespace SalesManagement.ManHinhNhap
                 }
                 else
                     sp.DoiTra = "";
-                listSP.Add(sp);
+                if (sp != null)
+                {
+                    listSP.Add(sp);
+                }
             }
             sqlReader.Close();
             sqlConnection.Close();
@@ -159,10 +162,13 @@ namespace SalesManagement.ManHinhNhap
             else
             {
                 SanPham temp = row.DataContext as SanPham;
-                ChinhSuaSanPham window = new ChinhSuaSanPham(temp.MaSP);
-                //(Application.Current.Windows[4] as ChinhSuaSanPham).editMaSP = temp.MaSP;
-                window.ShowDialog();
-                refreshData();
+                if (temp != null)
+                {
+                    ChinhSuaSanPham window = new ChinhSuaSanPham(temp.MaSP);
+                    //(Application.Current.Windows[4] as ChinhSuaSanPham).editMaSP = temp.MaSP;
+                    window.ShowDialog();
+                    refreshData();
+                }
             }
         }
 
@@ -171,12 +177,14 @@ namespace SalesManagement.ManHinhNhap
             CheckBox checkBox = (CheckBox)e.OriginalSource;
             DataGridRow dataGridRow = VisualTreeHelpers.FindAncestor<DataGridRow>(checkBox);
             int index = dataGridRow.GetIndex();
-
-            if (checkBox.IsChecked == false)
+            if (index < listSP.Count)
             {
-                Brush temp = new BrushConverter().ConvertFrom("#1FFFFFFF") as Brush;
-                dataGridRow.Background = temp;
-                listSP[index].isChecked = false;
+                if (checkBox.IsChecked == false)
+                {
+                    Brush temp = new BrushConverter().ConvertFrom("#1FFFFFFF") as Brush;
+                    dataGridRow.Background = temp;
+                    listSP[index].isChecked = false;
+                }
             }
         }
 
@@ -185,11 +193,13 @@ namespace SalesManagement.ManHinhNhap
             CheckBox checkBox = (CheckBox)e.OriginalSource;
             DataGridRow dataGridRow = VisualTreeHelpers.FindAncestor<DataGridRow>(checkBox);
             int index = dataGridRow.GetIndex();
-
-            if (checkBox.IsChecked == true)
+            if (index < listSP.Count)
             {
-                dataGridRow.Background = Brushes.IndianRed;
-                listSP[index].isChecked = true;
+                if (checkBox.IsChecked == true)
+                {
+                    dataGridRow.Background = Brushes.IndianRed;
+                    listSP[index].isChecked = true;
+                }
             }
 
         }
@@ -289,15 +299,18 @@ namespace SalesManagement.ManHinhNhap
 
         }
 
+        //Tìm kiếm
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            resetTxtSearch.Visibility = Visibility.Visible;
             if (listSPSearch.Count > 0)
-            {//Nếu tìm kiếm sản phẩm khác thì resesst lại list sản phẩm tìm kiếm
+            {
+                //Nếu tìm kiếm sản phẩm khác thì reset lại list sản phẩm tìm kiếm
                 listSPSearch.Clear();
             }
             if (txtSearch.Text.Trim() == "")
             {
+                resetTxtSearch.Visibility = Visibility.Collapsed;
                 DataGridNhap.ItemsSource = null;
                 DataGridNhap.ItemsSource = listSP;
 
@@ -335,6 +348,11 @@ namespace SalesManagement.ManHinhNhap
                 DataGridNhap.ItemsSource = listSPSearch;
             }
 
+        }
+
+        private void resetTxtSearch_Click(object sender, RoutedEventArgs e)
+        {
+            txtSearch.Text = "";
         }
     }
 }

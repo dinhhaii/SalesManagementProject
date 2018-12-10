@@ -14,5 +14,14 @@ namespace SalesManagement
         public string SDT { get; set; }
         public string Email { get; set; }
         public string DiaChi { get; set; }
+        private bool isSelected;
+        public bool isChecked
+        {
+            get { return isSelected; }
+            set
+            {
+                isSelected = value;
+            }
+        }
     }
 }

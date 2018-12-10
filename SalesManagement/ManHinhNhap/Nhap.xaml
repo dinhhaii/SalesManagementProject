@@ -34,8 +34,16 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>
-        <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+        <!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
+            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Background="White" Width="200" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+            <Button       
+                Name="resetTxtSearch"
+                Height="25"
+                Visibility="Collapsed"
+                Content="{materialDesign:PackIcon Close}"
+                Click="resetTxtSearch_Click"/>
+        </StackPanel>
         <DataGrid
             Name="DataGridNhap"
             Grid.ColumnSpan="3" Grid.Row="1"

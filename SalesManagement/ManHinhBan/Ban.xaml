@@ -24,17 +24,173 @@
     </UserControl.Resources>
 
     <Grid Background="#FF303030">
-        <Grid.ColumnDefinitions>
+        <!--<Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox FontSize="13" materialDesign:HintAssist.Hint="Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,2"></TextBox>
+        --><!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>--><!--
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="0">
+            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Background="White" Width="150" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+            <Button       
+                Name="resetTxtSearch"
+                Height="25"
+                Visibility="Collapsed"
+                Content="{materialDesign:PackIcon Close}"
+                Click="resetTxtSearch_Click"/>
+        </StackPanel>
 
+        <ListView
+            Grid.Row="1"
+            ItemsSource="{Binding Items1}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn>
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <CheckBox
+                                Name="checkBoxDeleteAll"
+                                Checked="CheckBoxHeader_CheckedUnChecked"
+                                Unchecked="CheckBoxHeader_CheckedUnChecked"
+                                HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox
+                                x:Name="checkBoxDelete"
+                                HorizontalAlignment="Center"
+                                IsChecked="{Binding isChecked, Mode=TwoWay}"
+                                Checked="CheckBoxItem_CheckedUnChecked"
+                                Unchecked="CheckBoxItem_CheckedUnChecked"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding TenKH}"
+                        Header="Khách hàng" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Grid Grid.Column="1" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GroupBox
+                Header="Nhập thông tin sản phẩm"
+                Style="{DynamicResource MaterialDesignCardGroupBox}">
+                <DataGrid
+                    Name="DataGridNhap"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    ColumnWidth="*"
+                    CanUserSortColumns="True"
+                    CanUserAddRows="True"
+                    AutoGenerateColumns="False"
+                    ScrollViewer.CanContentScroll="False">
+                    <DataGrid.Resources>
+                        <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                            <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                        </Style>
+                    </DataGrid.Resources>
+
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
+                        </Style>
+                    </DataGrid.CellStyle>
+
+                    <DataGrid.Columns>
+                        --><!--MÃ SẢN PHẨM--><!--
+                        <DataGridTextColumn
+                    Header="Mã sản phẩm"
+                    Width="120"
+                    Binding="{Binding MaSP}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </DataGridTextColumn>
+
+                        --><!--TÊN SẢN PHẨM--><!--
+                        <materialDesign:MaterialDataGridTextColumn
+                    Width="150"
+                    Binding="{Binding TenSP}"
+                    Header="Tên sản phẩm"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:MaterialDataGridTextColumn>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </GroupBox>
+        </Grid>
+        
+        <Button
+            x:Name="btnDeleteProduct"
+            Click="btnDeleteProduct_Click"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,25,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Name="icondeletebtn"
+                Kind="Delete"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
+            x:Name="btnAddProduct"
+            Click="btnAddProduct_Click"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,85,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Kind="Add"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
+            x:Name="btnDelete"
+            Click="btnDelete_Click"
+            Visibility="Collapsed"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="Red"
+            Margin="0,0,85,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Kind="Delete"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
+            <StatusBarItem>
+                <TextBlock Name="status" ></TextBlock>
+            </StatusBarItem>
+        </StatusBar>-->
 
     </Grid>
 

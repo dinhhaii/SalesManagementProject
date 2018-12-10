@@ -15,5 +15,6 @@ namespace SalesManagement
         public string Email { get; set; }
         public string DiaChi { get; set; }
         public double Luong { get; set; }
+        public string ViTri { get; set; }
     }
 }

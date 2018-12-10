@@ -40,26 +40,34 @@
             </Grid.Background>
 
             <TextBlock Text="LOGO IN HERE" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25"></TextBlock>
-
-            <materialDesign:Chip
+            <materialDesign:Badged
+                Name="position"
+                Badge="Quản lý"
+                BadgeColorZoneMode="Inverted"
                 HorizontalAlignment="Right"
-                Grid.Column="1"
-                Content="J7 Team"
-                Foreground="White"
-                IconBackground="Gray"
-                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
-                <materialDesign:Chip.Icon>
-                    <materialDesign:PackIcon
-                    Kind="Account"></materialDesign:PackIcon>
-                </materialDesign:Chip.Icon>
-            </materialDesign:Chip>
+                VerticalAlignment="Center"
+                Grid.Column="1">
+                <materialDesign:Chip
+                    Name="userfullname"
+                    Content="J7 Team"
+                    Foreground="White"
+                    IconBackground="Gray"
+                    IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                        <materialDesign:Chip.Icon>
+                            <materialDesign:PackIcon
+                        Kind="Account"></materialDesign:PackIcon>
+                        </materialDesign:Chip.Icon>
+                </materialDesign:Chip>
+            </materialDesign:Badged>
+            
 
             <Button
                 Grid.Column="2"
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center" 
                 Background="{x:Null}" 
-                BorderBrush="{x:Null}">
+                BorderBrush="{x:Null}"
+                Click="Button_Click">
                 <materialDesign:PackIcon Height="20" Width="20" Kind="Logout"/>
             </Button>
         </Grid>

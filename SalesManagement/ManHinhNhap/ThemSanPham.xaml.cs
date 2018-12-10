@@ -32,6 +32,10 @@ namespace SalesManagement.ManHinhNhap
         public ThemSanPham()
         {
             InitializeComponent();
+            datePicker.Text = DateTime.Now.ToString();
+            datePicker.DisplayDate = DateTime.Now;
+            datePicker.IsEnabled = false;
+           
         }
 
         //Connect to SQL Server
@@ -124,7 +128,7 @@ namespace SalesManagement.ManHinhNhap
                         sqlCommand.Parameters.Add("@Size", SqlDbType.NChar).Value = txtSize.Text;
                         sqlCommand.Parameters.Add("@SoLuong", SqlDbType.Int).Value = int.Parse(txtSoLuong.Text);
                         sqlCommand.Parameters.Add("@Gia", SqlDbType.Real).Value = float.Parse(txtGia.Text);
-                        sqlCommand.Parameters.Add("@NgayNhap", SqlDbType.Date).Value = datePicker.DisplayDate;
+                        sqlCommand.Parameters.Add("@NgayNhap", SqlDbType.Date).Value = DateTime.Now;
                         //Nếu đổi trả
                         if (checkBox1.IsChecked == true)
                         {
