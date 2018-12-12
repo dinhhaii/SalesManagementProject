@@ -89,7 +89,6 @@
 
                 <!--CHECKBOX-->
                 <DataGridTemplateColumn 
-                    Header="Hình ảnh"
                     Visibility="Collapsed"
                     Width="80">
                     <DataGridTemplateColumn.HeaderTemplate>

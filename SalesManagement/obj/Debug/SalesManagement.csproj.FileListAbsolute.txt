@@ -1,24 +1,3 @@
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\MainWindow.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\App.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe.config
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\SalesManagement.pdb
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\MaterialDesignColors.dll
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\App.baml
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\MainWindow.baml
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.g.resources
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.exe
-C:\Users\DINH HAI\Desktop\SalesManagement\SalesManagement\obj\Debug\SalesManagement.pdb
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
@@ -29,8 +8,20 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Draga
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\Chi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
@@ -38,6 +29,17 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Sales
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\App.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\Chi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
@@ -45,185 +47,3 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Sales
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
-F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
-F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
-F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
-F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
-F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
-F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
-F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
-F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
-F:\SalesManagementProject\SalesManagement\obj\Debug\Ban.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\Chi.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\Nhap.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\Thu.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
-F:\SalesManagementProject\SalesManagement\obj\Debug\App.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\Ban.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\Chi.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\Nhap.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\Thu.baml
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
-F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-F:\SalesManagementProject\SalesManagement\obj\Debug\AddProduct.g.cs
-F:\SalesManagementProject\SalesManagement\obj\Debug\AddProduct.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\AddProduct.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Ban.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Chi.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Nhap.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Thu.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\App.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\AddProduct.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Ban.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Chi.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Nhap.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\Thu.baml
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
-D:\SalesManagementProject\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Ban.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\Chi.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\Nhap.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\Thu.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\SalesManagementProject\SalesManagement\obj\Debug\App.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Ban.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Chi.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Nhap.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\QuanLyNhanSu.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\ThongKe.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\Thu.baml
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-D:\SalesManagement\SalesManagement\obj\Debug\Home.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\MainWindow.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\App.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
-D:\SalesManagement\SalesManagement\obj\Debug\App.baml
-D:\SalesManagement\SalesManagement\obj\Debug\MainWindow.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.exe
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.pdb
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhChi\Chi.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
-D:\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe.config
-D:\SalesManagement\SalesManagement\bin\Debug\SalesManagement.exe
-D:\SalesManagement\SalesManagement\bin\Debug\SalesManagement.pdb
-D:\SalesManagement\SalesManagement\bin\Debug\Dragablz.dll
-D:\SalesManagement\SalesManagement\bin\Debug\MaterialDesignColors.dll
-D:\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\SalesManagement\SalesManagement\bin\Debug\Dragablz.pdb
-D:\SalesManagement\SalesManagement\bin\Debug\Dragablz.xml
-D:\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\SalesManagement\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\SalesManagement\SalesManagement\obj\Debug\Home.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhBan\Ban.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhChi\Chi.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
-D:\SalesManagement\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.g.resources
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
-D:\SalesManagement\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\Chi.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\Chi.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml

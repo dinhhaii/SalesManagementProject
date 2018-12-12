@@ -24,7 +24,7 @@
     </UserControl.Resources>
 
     <Grid Background="#FF303030">
-        <!--<Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -34,7 +34,7 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
 
-        --><!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>--><!--
+        <!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="0">
             <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Background="White" Width="150" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
             <Button       
@@ -45,100 +45,208 @@
                 Click="resetTxtSearch_Click"/>
         </StackPanel>
 
-        <ListView
+        <DataGrid
+            Name="DataGridKH"
             Grid.Row="1"
-            ItemsSource="{Binding Items1}">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn>
-                        <GridViewColumn.HeaderTemplate>
-                            <DataTemplate>
-                                <CheckBox
+            CanUserSortColumns="True"
+            CanUserAddRows="True"
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="False">
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridKHCell_PreviewMouseLeftButtonDown"></EventSetter>
+                    <Setter Property="Height" Value="30"></Setter>
+                    <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn
+                    Visibility="Collapsed">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox
                                 Name="checkBoxDeleteAll"
                                 Checked="CheckBoxHeader_CheckedUnChecked"
                                 Unchecked="CheckBoxHeader_CheckedUnChecked"
                                 HorizontalAlignment="Center" />
-                            </DataTemplate>
-                        </GridViewColumn.HeaderTemplate>
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox
                                 x:Name="checkBoxDelete"
                                 HorizontalAlignment="Center"
                                 IsChecked="{Binding isChecked, Mode=TwoWay}"
                                 Checked="CheckBoxItem_CheckedUnChecked"
                                 Unchecked="CheckBoxItem_CheckedUnChecked"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
-                    <GridViewColumn
-                        DisplayMemberBinding="{Binding TenKH}"
-                        Header="Khách hàng" />
-                </GridView>
-            </ListView.View>
-        </ListView>
+                <DataGridTextColumn
+                    Width="200"
+                    Header="Khách hàng"
+                    Binding="{Binding TenKH}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <Grid Grid.Column="1" Grid.Row="1" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <GroupBox
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <!--<GroupBox
                 Header="Nhập thông tin sản phẩm"
-                Style="{DynamicResource MaterialDesignCardGroupBox}">
-                <DataGrid
-                    Name="DataGridNhap"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    ColumnWidth="*"
-                    CanUserSortColumns="True"
-                    CanUserAddRows="True"
-                    AutoGenerateColumns="False"
-                    ScrollViewer.CanContentScroll="False">
-                    <DataGrid.Resources>
-                        <Style
-                    TargetType="{x:Type DataGridColumnHeader}"
-                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
-                            <Setter
-                        Property="HorizontalAlignment"
-                        Value="Center" />
-                        </Style>
-                    </DataGrid.Resources>
+                Style="{DynamicResource MaterialDesignCardGroupBox}">-->
+            <DataGrid
+                Margin="5"
+                Name="DataGridSP"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                ColumnWidth="*"
+                CanUserSortColumns="True"
+                CanUserAddRows="True"
+                AutoGenerateColumns="False"
+                IsReadOnly="True"
+                ScrollViewer.CanContentScroll="False">
+                <DataGrid.Resources>
+                    <Style
+                            TargetType="{x:Type DataGridColumnHeader}"
+                            BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                    </Style>
+                </DataGrid.Resources>
 
-                    <DataGrid.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
-                        </Style>
-                    </DataGrid.CellStyle>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridSPCell_PreviewMouseLeftButtonDown"></EventSetter>
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                    </Style>
+                </DataGrid.CellStyle>
 
-                    <DataGrid.Columns>
-                        --><!--MÃ SẢN PHẨM--><!--
-                        <DataGridTextColumn
-                    Header="Mã sản phẩm"
-                    Width="120"
-                    Binding="{Binding MaSP}"
-                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                        </DataGridTextColumn>
+                <DataGrid.Columns>
+                    <!--Mã sản phẩm-->
+                    <!--<DataGridTextColumn
+                            Header="Mã SP"
+                            Width="8 0"
+                            Binding="{Binding MaSP}"
+                            EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                    </DataGridTextColumn>-->
 
-                        --><!--TÊN SẢN PHẨM--><!--
-                        <materialDesign:MaterialDataGridTextColumn
-                    Width="150"
-                    Binding="{Binding TenSP}"
-                    Header="Tên sản phẩm"
-                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                        </materialDesign:MaterialDataGridTextColumn>
+                    <!--TÊN SẢN PHẨM-->
+                    <DataGridTextColumn
+                            Width="130"
+                            Binding="{Binding TenSP}"
+                            Header="Tên sản phẩm"
+                            EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter
+                                Property="HorizontalAlignment"
+                                Value="Left" />
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
 
-                    </DataGrid.Columns>
 
-                </DataGrid>
+                    <DataGridTextColumn
+                        Header="Size"
+                        Width="70"
+                        Binding="{Binding Size}"
+                        EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                    </DataGridTextColumn>
+
+                    <DataGridTemplateColumn
+                        Header="Số lượng">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Name="decrease" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
+                                        <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Minus"></materialDesign:PackIcon>
+                                    </Button>
+                                    <Grid Width="50">
+                                        <TextBox Name="numberofproduct" HorizontalAlignment="Center" Text="0"></TextBox>
+                                    </Grid>
+                                    <Button Name="increase" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
+                                        <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Plus"></materialDesign:PackIcon>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn
+                    Header="Giá"
+                    Width="80"
+                    Binding="{Binding Gia}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <!--</GroupBox>-->
+            
+            <Button Width="150" Grid.Row="1" Click="ButtonNhap_Click">NHẬP</Button>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Width="150" HorizontalAlignment="Center" Click="ButtonKM_Click">KHUYẾN MÃI</Button>
+                <Button Width="150" Grid.Column="1" HorizontalAlignment="Center" Click="ButtonTT_Click">THANH TOÁN</Button>                
+            </Grid>
+
+            <GroupBox
+                Grid.Column="1"
+                Header="Hóa đơn">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="13" Foreground="White" Text="Khách hàng: "></TextBlock>
+                        <TextBlock FontSize="13" Name="customername" Foreground="White" FontWeight="Bold" Text=""></TextBlock>
+                    </StackPanel>
+                    <ListView Name="ListViewSPMua">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Tên sản phẩm"></GridViewColumn>
+                                <GridViewColumn Header="Khuyến mãi"></GridViewColumn>
+                                <GridViewColumn Header="SL"></GridViewColumn>
+                                <GridViewColumn Header="Giá"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel HorizontalAlignment="right">
+                            <TextBlock Margin="5" FontSize="13" Foreground="White" Text="Tổng tiền: "></TextBlock>
+                            <TextBlock Margin="5" FontSize="13" Foreground="White" Text="Khuyến mãi: "></TextBlock>
+                            <TextBlock Margin="5" FontSize="13" Foreground="White" Text="Thành tiền: "></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Left">
+                            <TextBlock Margin="5" Name="tongtien"  FontSize="13" Foreground="White" Text="0"></TextBlock>
+                            <TextBlock Margin="5" Name="khuyenmai" FontSize="13" Foreground="White" Text="0%"></TextBlock>
+                            <TextBlock Margin="5" Name="thanhtien" FontSize="13" Foreground="White" Text="{Binding ThanhTien}"></TextBlock>
+                        </StackPanel>
+
+                    </Grid>
+                </StackPanel>
             </GroupBox>
         </Grid>
-        
+
+
         <Button
-            x:Name="btnDeleteProduct"
-            Click="btnDeleteProduct_Click"
-            Grid.Column="1" Grid.Row="1" 
+            x:Name="btnDeleteCustomer"
+            Click="btnDeleteCustomer_Click"
+            Grid.Column="0" Grid.Row="1" 
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
             Margin="0,0,25,20"
@@ -153,12 +261,12 @@
         </Button>
 
         <Button
-            x:Name="btnAddProduct"
-            Click="btnAddProduct_Click"
-            Grid.Column="1" Grid.Row="1" 
+            x:Name="btnAddCustomer"
+            Click="btnAddCustomer_Click"
+            Grid.Column="0" Grid.Row="1" 
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
-            Margin="0,0,85,20"
+            Margin="0,0,145,20"
             Width="50" Height="50"
             Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
             ToolTip="MaterialDesignFloatingActionAccentButton">
@@ -169,10 +277,26 @@
         </Button>
 
         <Button
+            x:Name="btnEditCustomer"
+            Click="btnEditCustomer_Click"
+            Grid.Column="0" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,85,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Kind="Edit"
+                Height="24"
+                Width="24" />
+        </Button>
+
+        <Button
             x:Name="btnDelete"
             Click="btnDelete_Click"
             Visibility="Collapsed"
-            Grid.Column="1" Grid.Row="1" 
+            Grid.Column="0" Grid.Row="1" 
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
             Background="Red"
@@ -190,7 +314,7 @@
             <StatusBarItem>
                 <TextBlock Name="status" ></TextBlock>
             </StatusBarItem>
-        </StatusBar>-->
+        </StatusBar>
 
     </Grid>
 

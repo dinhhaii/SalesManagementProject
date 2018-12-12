@@ -73,6 +73,15 @@
     <Compile Include="ManHinhBan\Ban.xaml.cs">
       <DependentUpon>Ban.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ManHinhBan\KhuyenMai.xaml.cs">
+      <DependentUpon>KhuyenMai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhBan\ThanhToan.xaml.cs">
+      <DependentUpon>ThanhToan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhBan\ThemKhachHang.xaml.cs">
+      <DependentUpon>ThemKhachHang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ManHinhChi\Chi.xaml.cs">
       <DependentUpon>Chi.xaml</DependentUpon>
     </Compile>
@@ -116,6 +125,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ManHinhBan\Ban.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhBan\KhuyenMai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhBan\ThanhToan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhBan\ThemKhachHang.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
