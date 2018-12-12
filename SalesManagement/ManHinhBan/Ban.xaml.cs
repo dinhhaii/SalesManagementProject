@@ -16,6 +16,7 @@ using System.Collections.ObjectModel;
 using System.Data.SqlClient;
 using System.Data;
 using System.ComponentModel;
+using SalesManagement;
 
 namespace SalesManagement.ManHinhBan
 {
@@ -34,16 +35,7 @@ namespace SalesManagement.ManHinhBan
 
         public bool isDelete { get; set; }
         public bool isEditing { get; set; }
-        public string ThanhTien = "0";
-        public string TT
-        {
-            get { return ThanhTien; }
-            set
-            {
-                ThanhTien = value;
-                OnPropertyChanged("TT");
-            }
-        }
+        public string TenKHMua { get; set; }
 
         public Ban()
         {
@@ -58,13 +50,11 @@ namespace SalesManagement.ManHinhBan
             this.DataContext = this;
         }
 
-        public class SanPhamMua
+        public class SanPhamMua : SP_KH
         {
             public string TenKH { get; set; }
             public string TenSP { get; set; }
-            public string KhuyenMai { get; set; }
-            public string SL { get; set; }
-            public string Gia { get; set; }
+            public double Gia { get; set; }
         }
 
         protected virtual void OnPropertyChanged(string newName)
@@ -235,11 +225,81 @@ namespace SalesManagement.ManHinhBan
             }
             else
             {
+                TenKHMua = temp.TenKH;
                 customername.Text = temp.TenKH;
-                row.Background = Brushes.DarkSlateGray;
+                DataGridSP.Visibility = Visibility.Visible;
             }
 
         }
+
+        //Click Cell from DataGridSP
+        private void DataGridSPCell_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DataGridCell myCell = sender as DataGridCell;
+            DataGridRow row = DataGridRow.GetRowContainingElement(myCell);
+            TextBox myTextBox = VisualTreeHelpers.FindChild<TextBox>(row);
+            //Thông tin về sản phẩm được chọn (temp)
+            SanPham temp = row.Item as SanPham;
+
+            int i = 0;
+            for(; i < listSPMua.Count; i++)
+            {
+                if(listSPMua[i].TenSP == temp.TenSP)
+                {
+                    int result;
+                    if (int.TryParse(myTextBox.Text, out result))
+                    {
+                        int SL = int.Parse(myTextBox.Text) + 1;
+                        myTextBox.Text = SL.ToString();
+                        listSPMua[i].SoLuong = SL;
+                        listSPMua[i].Gia = temp.Gia * (100 - listSPMua[i].KhuyenMai)/100f * (double)SL;
+                        break;
+                    }
+                }
+            }
+            SanPhamMua tmp = new SanPhamMua();
+            if (i == listSPMua.Count)
+            {
+                //Thông tin không thay đổi
+                foreach(KhachHang item in listKH)
+                {
+                    if(item.TenKH == TenKHMua)
+                    {
+                        tmp.MaKH = item.MaKH;
+                        break;
+                    }
+                }
+                tmp.TenKH = TenKHMua;
+                tmp.TenSP = temp.TenSP;
+                tmp.MaSP = temp.MaSP;
+                tmp.NgayBan = DateTime.Now;
+
+                //Thông tin được thêm có thay đổi
+                int result;
+                if (int.TryParse(myTextBox.Text, out result))
+                {
+                    int SL = int.Parse(myTextBox.Text) + 1;
+                    myTextBox.Text = SL.ToString();
+                    tmp.SoLuong = SL;
+                }
+                tmp.KhuyenMai = 50f;
+                tmp.Gia = temp.Gia * ((float)100 - tmp.KhuyenMai)/100f * (double)tmp.SoLuong;
+                listSPMua.Add(tmp);
+            }
+            ListViewSPMua.ItemsSource = null;
+            ListViewSPMua.ItemsSource = listSPMua;
+
+            double tong = 0f;
+            foreach(SanPhamMua item in listSPMua)
+            {
+                tong += item.Gia;
+            }
+            tongtien.Text = tong.ToString() + "đ";
+            khuyenmai.Text = "50%";
+            string km = khuyenmai.Text.Substring(0, khuyenmai.Text.Length - 1);
+            thanhtien.Text = (tong * (100f - (float)int.Parse(km))/100f).ToString() + "đ";
+        }
+
         private void CheckBoxHeader_CheckedUnChecked(object sender, RoutedEventArgs e)
         {
             CheckBox checkBox = (CheckBox)e.OriginalSource;
@@ -451,15 +511,6 @@ namespace SalesManagement.ManHinhBan
 
         private void ButtonNhap_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        //Click Cell from DataGridSP
-        private void DataGridSPCell_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            DataGridCell myCell = sender as DataGridCell;
-            DataGridRow row = DataGridRow.GetRowContainingElement(myCell);
-            SanPham temp = row.Item as SanPham;
 
         }
     }

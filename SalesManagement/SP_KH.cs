@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SalesManagement
 {
-    class SP_KH
+    public class SP_KH
     {
         public string MaSP { get; set; }
         public string MaKH { get; set; }
         public string STT { get; set; }
         public DateTime NgayBan { get; set; }
         public int SoLuong { get; set; }
+        public float KhuyenMai { get; set; }
     }
 }

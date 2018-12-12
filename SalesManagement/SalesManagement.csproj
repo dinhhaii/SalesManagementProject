@@ -106,6 +106,7 @@
     <Compile Include="NhanVien.cs" />
     <Compile Include="QuanLy.cs" />
     <Compile Include="SanPham.cs" />
+    <Compile Include="SP_KH.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="VisualTreeHelpers.cs" />
     <Page Include="Home.xaml">

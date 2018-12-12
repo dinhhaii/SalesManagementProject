@@ -107,6 +107,7 @@
                 Header="Nhập thông tin sản phẩm"
                 Style="{DynamicResource MaterialDesignCardGroupBox}">-->
             <DataGrid
+                Visibility="Collapsed"
                 Margin="5"
                 Name="DataGridSP"
                 HorizontalAlignment="Stretch"
@@ -128,19 +129,11 @@
                 <DataGrid.CellStyle>
                     <Style TargetType="DataGridCell">
                         <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridSPCell_PreviewMouseLeftButtonDown"></EventSetter>
-                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                        <!--<Setter Property="HorizontalAlignment" Value="Center"></Setter>-->
                     </Style>
                 </DataGrid.CellStyle>
 
                 <DataGrid.Columns>
-                    <!--Mã sản phẩm-->
-                    <!--<DataGridTextColumn
-                            Header="Mã SP"
-                            Width="8 0"
-                            Binding="{Binding MaSP}"
-                            EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
-                    </DataGridTextColumn>-->
-
                     <!--TÊN SẢN PHẨM-->
                     <DataGridTextColumn
                             Width="130"
@@ -149,9 +142,10 @@
                             EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
                         <DataGridTextColumn.CellStyle>
                             <Style TargetType="DataGridCell">
-                                <Setter
+                                <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridSPCell_PreviewMouseLeftButtonDown"></EventSetter>
+                                <!--<Setter
                                 Property="HorizontalAlignment"
-                                Value="Left" />
+                                Value="Left" />-->
                             </Style>
                         </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
@@ -168,17 +162,7 @@
                         Header="Số lượng">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Button Name="decrease" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
-                                        <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Minus"></materialDesign:PackIcon>
-                                    </Button>
-                                    <Grid Width="50">
-                                        <TextBox Name="numberofproduct" HorizontalAlignment="Center" Text="0"></TextBox>
-                                    </Grid>
-                                    <Button Name="increase" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
-                                        <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Plus"></materialDesign:PackIcon>
-                                    </Button>
-                                </StackPanel>
+                                <TextBox Name="numberofproduct" HorizontalAlignment="Center" Text="0"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
@@ -188,6 +172,19 @@
                     Width="80"
                     Binding="{Binding Gia}"
                     EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"></DataGridTextColumn>
+
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Name="decrease" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
+                                    <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Minus"></materialDesign:PackIcon>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+
                 </DataGrid.Columns>
             </DataGrid>
             <!--</GroupBox>-->
@@ -205,25 +202,30 @@
             <GroupBox
                 Grid.Column="1"
                 Header="Hóa đơn">
-                <StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                    </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontSize="13" Foreground="White" Text="Khách hàng: "></TextBlock>
-                        <TextBlock FontSize="13" Name="customername" Foreground="White" FontWeight="Bold" Text=""></TextBlock>
+                        <TextBlock FontSize="15" Foreground="White" Text="Khách hàng: "></TextBlock>
+                        <TextBlock FontSize="15" Name="customername" Foreground="White" FontWeight="Bold" Text=""></TextBlock>
                     </StackPanel>
-                    <ListView Name="ListViewSPMua">
+                    <ListView Grid.Row="1" Name="ListViewSPMua">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Tên sản phẩm"></GridViewColumn>
-                                <GridViewColumn Header="Khuyến mãi"></GridViewColumn>
-                                <GridViewColumn Header="SL"></GridViewColumn>
-                                <GridViewColumn Header="Giá"></GridViewColumn>
+                                <GridViewColumn Header="Tên sản phẩm" DisplayMemberBinding="{Binding TenSP}"></GridViewColumn>
+                                <GridViewColumn Header="Khuyến mãi (%)" DisplayMemberBinding="{Binding KhuyenMai}"></GridViewColumn>
+                                <GridViewColumn Header="SL" DisplayMemberBinding="{Binding SoLuong}"></GridViewColumn>
+                                <GridViewColumn Header="Giá (VNĐ)" DisplayMemberBinding="{Binding Gia}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>
                     
-                    <Grid>
+                    <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel HorizontalAlignment="right">
@@ -234,11 +236,11 @@
                         <StackPanel Grid.Column="1" HorizontalAlignment="Left">
                             <TextBlock Margin="5" Name="tongtien"  FontSize="13" Foreground="White" Text="0"></TextBlock>
                             <TextBlock Margin="5" Name="khuyenmai" FontSize="13" Foreground="White" Text="0%"></TextBlock>
-                            <TextBlock Margin="5" Name="thanhtien" FontSize="13" Foreground="White" Text="{Binding ThanhTien}"></TextBlock>
+                            <TextBlock Margin="5" Name="thanhtien" FontSize="13" Foreground="White" Text="{Binding TT}"></TextBlock>
                         </StackPanel>
 
                     </Grid>
-                </StackPanel>
+                </Grid>
             </GroupBox>
         </Grid>
 
