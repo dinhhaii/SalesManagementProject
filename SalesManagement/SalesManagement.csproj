@@ -66,6 +66,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Chi.cs" />
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -73,8 +74,14 @@
     <Compile Include="ManHinhBan\Ban.xaml.cs">
       <DependentUpon>Ban.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ManHinhBan\ChinhSuaKhachHang.xaml.cs">
+      <DependentUpon>ChinhSuaKhachHang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ManHinhBan\KhuyenMai.xaml.cs">
       <DependentUpon>KhuyenMai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhBan\KhuyenMai1SP.xaml.cs">
+      <DependentUpon>KhuyenMai1SP.xaml</DependentUpon>
     </Compile>
     <Compile Include="ManHinhBan\ThanhToan.xaml.cs">
       <DependentUpon>ThanhToan.xaml</DependentUpon>
@@ -82,8 +89,14 @@
     <Compile Include="ManHinhBan\ThemKhachHang.xaml.cs">
       <DependentUpon>ThemKhachHang.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ManHinhChi\Chi.xaml.cs">
-      <DependentUpon>Chi.xaml</DependentUpon>
+    <Compile Include="ManHinhChi\ChinhSuaChi.xaml.cs">
+      <DependentUpon>ChinhSuaChi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChi\TableChi.xaml.cs">
+      <DependentUpon>TableChi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhChi\ThemChi.xaml.cs">
+      <DependentUpon>ThemChi.xaml</DependentUpon>
     </Compile>
     <Compile Include="ManHinhNhap\ChinhSuaSanPham.xaml.cs">
       <DependentUpon>ChinhSuaSanPham.xaml</DependentUpon>
@@ -99,6 +112,9 @@
     </Compile>
     <Compile Include="ManHinhThongKe\ThongKe.xaml.cs">
       <DependentUpon>ThongKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinhThu\ThongTinKH_SP.xaml.cs">
+      <DependentUpon>ThongTinKH_SP.xaml</DependentUpon>
     </Compile>
     <Compile Include="ManHinhThu\Thu.xaml.cs">
       <DependentUpon>Thu.xaml</DependentUpon>
@@ -129,7 +145,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ManHinhBan\ChinhSuaKhachHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ManHinhBan\KhuyenMai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhBan\KhuyenMai1SP.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,9 +165,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ManHinhChi\Chi.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="ManHinhChi\ChinhSuaChi.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ManHinhChi\TableChi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ManHinhChi\ThemChi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ManHinhNhap\ChinhSuaSanPham.xaml">
       <SubType>Designer</SubType>
@@ -164,6 +196,10 @@
     <Page Include="ManHinhThongKe\ThongKe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ManHinhThu\ThongTinKH_SP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ManHinhThu\Thu.xaml">
       <SubType>Designer</SubType>

@@ -27,6 +27,7 @@ namespace SalesManagement
         public Home(string MaNV)
         {
             InitializeComponent();
+  
             getData();
             if (App.isEmployee)
             {
@@ -45,6 +46,8 @@ namespace SalesManagement
                     break;
                 }
             }
+
+            chucNangQuanLy();
         }
 
         //Connect to SQL Server
@@ -117,7 +120,34 @@ namespace SalesManagement
             MainWindow window = new MainWindow();
             this.Hide();
             window.ShowDialog();
-            this.Close();
+        }
+
+
+        private void chucNangQuanLy()
+        {
+            foreach (TabItem mytabitem in tabControl.Items)
+            {
+                if ((mytabitem as TabItem).Header.ToString() == "QUẢN LÝ NHÂN SỰ")
+                {
+                    if (!App.isEmployee)
+                    {
+                        userConTrolQL.Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        userConTrolQL.Visibility = Visibility.Collapsed;
+                        TextBlock notify = new TextBlock();
+                        notify.HorizontalAlignment = HorizontalAlignment.Center;
+                        notify.VerticalAlignment = VerticalAlignment.Center;
+                        notify.FontSize = 50;
+                        notify.FontWeight = FontWeights.Bold;
+                        notify.Foreground = Brushes.Black;
+                        notify.Text = "CHỨC NĂNG DÀNH CHO QUẢN LÝ";
+                        //MessageBox.Show("Chức năng dành cho Quản Lý", "Sales Management", MessageBoxButton.OK, MessageBoxImage.Hand);
+                    }
+                    break;
+                }
+            }
         }
     }
 }

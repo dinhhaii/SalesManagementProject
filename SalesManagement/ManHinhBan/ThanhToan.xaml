@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManagement.ManHinhBan"
         mc:Ignorable="d"
-        Title="ThanhToan" Height="200" Width="300">
+        Title="Thanh toán" Height="300" Width="350"   xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="15"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
-        
+        <StackPanel             
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <TextBlock FontSize="30" Margin="0,0,0,20" FontWeight="Bold">Số tiền khách đưa:</TextBlock>
+            <StackPanel 
+            Orientation="Horizontal">
+                <TextBox Name="txtbox" FontSize="30" Width="250" KeyDown="txtbox_KeyDown"></TextBox>
+                <TextBlock FontSize="30">VNĐ</TextBlock>
+            </StackPanel>
+            <StackPanel Margin="0,20,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Margin="10" Width="130" Click="Button_Click">Thanh toán</Button>
+                <Button Margin="10" Width="130" Click="Button_Click_1">Thoát</Button>
+            </StackPanel>
+
+        </StackPanel>
+
     </Grid>
 </Window>

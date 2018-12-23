@@ -106,7 +106,7 @@
                 </Grid>
             </StackPanel>
         </Grid>
-        <Image Source="Resource/logo2.jpg" Stretch="Fill" Grid.Column="1" Grid.RowSpan="2"></Image>
+        <!--<Image Source="Resource/logo2.jpg" Stretch="Fill" Grid.Column="1" Grid.RowSpan="2"></Image>-->
         
     </Grid>
 </Window>

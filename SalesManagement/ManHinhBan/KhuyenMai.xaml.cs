@@ -19,9 +19,21 @@ namespace SalesManagement.ManHinhBan
     /// </summary>
     public partial class KhuyenMai : Window
     {
+        public static string KM { get; set; }
         public KhuyenMai()
         {
             InitializeComponent();
+        }
+
+        private void combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem temp = combobox.SelectedItem as ComboBoxItem;
+            KM = temp.Content.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

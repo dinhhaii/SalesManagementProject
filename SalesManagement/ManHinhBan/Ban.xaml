@@ -26,7 +26,7 @@
     <Grid Background="#FF303030">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"></RowDefinition>
@@ -34,9 +34,8 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="0">
-            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Background="White" Width="150" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Tìm kiếm" Background="White" Width="150" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
             <Button       
                 Name="resetTxtSearch"
                 Height="25"
@@ -48,15 +47,19 @@
         <DataGrid
             Name="DataGridKH"
             Grid.Row="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
             CanUserSortColumns="True"
             CanUserAddRows="True"
             AutoGenerateColumns="False"
+            IsReadOnly="True"
             ScrollViewer.CanContentScroll="False">
 
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
                     <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridKHCell_PreviewMouseLeftButtonDown"></EventSetter>
-                    <Setter Property="Height" Value="30"></Setter>
+                    <Setter Property="Height" Value="40"></Setter>
                     <Setter Property="VerticalAlignment" Value="Center"></Setter>
                 </Style>
             </DataGrid.CellStyle>
@@ -103,10 +106,9 @@
                 <RowDefinition Height="6*"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <!--<GroupBox
-                Header="Nhập thông tin sản phẩm"
-                Style="{DynamicResource MaterialDesignCardGroupBox}">-->
+
             <DataGrid
+                Grid.RowSpan="2"
                 Visibility="Collapsed"
                 Margin="5"
                 Name="DataGridSP"
@@ -143,9 +145,9 @@
                         <DataGridTextColumn.CellStyle>
                             <Style TargetType="DataGridCell">
                                 <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridSPCell_PreviewMouseLeftButtonDown"></EventSetter>
-                                <!--<Setter
+                                <Setter
                                 Property="HorizontalAlignment"
-                                Value="Left" />-->
+                                Value="Stretch" />
                             </Style>
                         </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
@@ -177,26 +179,34 @@
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Name="decrease" Background="DimGray" BorderBrush="Black" Width="38" Height="20">
+                                <Button Name="decrease" Background="DimGray" BorderBrush="Black" Width="38" Height="20" Click="decrease_Click">
                                     <materialDesign:PackIcon Width="40" Height="10" HorizontalAlignment="Center" Kind="Minus"></materialDesign:PackIcon>
                                 </Button>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
+                        <DataGridTemplateColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter
+                                Property="HorizontalAlignment"
+                                Value="Center" />
+                            </Style>
+                        </DataGridTemplateColumn.CellStyle>
                     </DataGridTemplateColumn>
-                    
+
 
                 </DataGrid.Columns>
             </DataGrid>
             <!--</GroupBox>-->
-            
-            <Button Width="150" Grid.Row="1" Click="ButtonNhap_Click">NHẬP</Button>
+
             <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Button Width="150" HorizontalAlignment="Center" Click="ButtonKM_Click">KHUYẾN MÃI</Button>
-                <Button Width="150" Grid.Column="1" HorizontalAlignment="Center" Click="ButtonTT_Click">THANH TOÁN</Button>                
+                <Button Width="150" Grid.Column="1" HorizontalAlignment="Center" Click="ButtonTT_Click">THANH TOÁN</Button>
+
+                
             </Grid>
 
             <GroupBox
@@ -221,8 +231,14 @@
                                 <GridViewColumn Header="Giá (VNĐ)" DisplayMemberBinding="{Binding Gia}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
+
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
                     </ListView>
-                    
+
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition></ColumnDefinition>
@@ -289,6 +305,7 @@
             Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
             ToolTip="MaterialDesignFloatingActionAccentButton">
             <materialDesign:PackIcon
+                Name="iconeditbutton"
                 Kind="Edit"
                 Height="24"
                 Width="24" />
@@ -317,6 +334,11 @@
                 <TextBlock Name="status" ></TextBlock>
             </StatusBarItem>
         </StatusBar>
+
+        <Label Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown">
+            <materialDesign:PackIcon Kind="Loop">
+            </materialDesign:PackIcon>
+        </Label>
 
     </Grid>
 

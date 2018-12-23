@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SalesManagement.ManHinhThu"
              mc:Ignorable="d" 
              x:Name="ThuUserControl"
-            d:DesignHeight="400" d:DesignWidth="1000"
+           d:DesignHeight="400" d:DesignWidth="1000"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
 
@@ -17,25 +17,156 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.deeporange.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
+    <UserControl.Foreground>
+        <RadialGradientBrush>
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </UserControl.Foreground>
 
     <Grid Background="#FF303030">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox FontSize="13" materialDesign:HintAssist.Hint="Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,2"></TextBox>
+        <!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
+            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Tìm kiếm" Background="White" Width="200" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+            <Button       
+                Name="resetTxtSearch"
+                Height="25"
+                Visibility="Collapsed"
+                Content="{materialDesign:PackIcon Close}"
+                Click="resetTxtSearch_Click"/>
+        </StackPanel>
+        <DataGrid 
+            Name="DataGridNhap"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
+            CanUserSortColumns="True"
+            CanUserAddRows="True"
+            IsReadOnly="True"
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="False"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8" Margin="0,30,0,0.2" Grid.RowSpan="2">
 
+            <DataGrid.Resources>
+                <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                    <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                </Style>
+            </DataGrid.Resources>
 
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
+                    <Setter Property="Height" Value="40"></Setter>
+                </Style>
+            </DataGrid.CellStyle>
+
+            <DataGrid.Columns>
+
+                <!--MÃ SẢN PHẨM-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Header="Mã sản phẩm"
+                    Width="120"
+                    Binding="{Binding MaSP1}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+                <!--TÊN SẢN PHẨM-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Width="200"
+                    Binding="{Binding TenSP1}"
+                    Header="Tên sản phẩm"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+                <!--SIZE-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Binding="{Binding Size1}"
+                    Width="80"
+                    Header="Size"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+                <!--SỐ LƯỢNG-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Binding="{Binding SoLuong1}"
+                    Width="80"
+                    Header="Số lượng"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+                <!--GIÁ-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Width="120"
+                    Binding="{Binding Gia1}"
+                    Header="Giá (VNĐ)"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+                <!--THÀNH TIỀN-->
+                <materialDesign:MaterialDataGridTextColumn
+                    x:Name="TienSP"
+                    Header="Thành Tiền (VNĐ)"
+                    Binding="{Binding ThanhTien1}"
+                    Width="140"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <materialDesign:Snackbar
+                IsActive="True">
+                <materialDesign:SnackbarMessage
+                Margin="0,-7,0,0"
+                Name="TongTien"
+                Content="TỔNG TIỀN :"
+                FontWeight="Bold"
+                ActionContent="0" />
+            </materialDesign:Snackbar>
+        </Grid>
+
+        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,0,0" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown">
+                <materialDesign:PackIcon Kind="Loop">
+                </materialDesign:PackIcon>
+        </Label> 
+        <StackPanel Width="150">
+            <DatePicker
+                Name="dpick"
+                HorizontalAlignment="Left"
+                Width="120"
+                materialDesign:HintAssist.Hint="Locale Date" 
+                FontSize="14" 
+                FontWeight="Bold" 
+                FontStyle="Normal"  
+                SelectedDateChanged="LocaleDatePicker_SelectedDateChanged"/>
+        </StackPanel>
     </Grid>
 
 </UserControl>

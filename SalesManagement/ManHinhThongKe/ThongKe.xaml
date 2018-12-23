@@ -13,7 +13,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
@@ -23,19 +23,177 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#FF303030">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
+    <Grid>
+        <ScrollViewer>
+            <Grid Background="#FF303030">
 
-        <TextBox FontSize="13" materialDesign:HintAssist.Hint="Search" Grid.Column="1" Background="White" Width="200" Height="25" HorizontalAlignment="Right" BorderBrush="#89000000" Margin="0,2"></TextBox>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White" Text="Chọn ngày: " FontSize="20" Margin="0 0 20 0"></TextBlock>
+                        <DatePicker Name="doanhthungay" FontSize="15" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Width="140" SelectedDateChanged="doanhthungay_SelectedDateChanged"></DatePicker>
+                    </StackPanel>
+
+                    <materialDesign:Flipper
+            HorizontalAlignment="Stretch"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignCardFlipper}">
+                        <materialDesign:Flipper.FrontContent>
+                            <Button
+                        Name="btnflipper1"
+                    Height="50"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                    FontSize="25"
+                    Foreground="White">
+                                THỐNG KÊ THEO NGÀY
+                            </Button>
+                        </materialDesign:Flipper.FrontContent>
+                        <materialDesign:Flipper.BackContent>
+                            <Grid Height="230">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="180"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackPanel Background="White" HorizontalAlignment="Stretch" Orientation="Horizontal" Grid.ColumnSpan="3">
+                                    <Button
+                                Width="150"
+                            Style="{StaticResource MaterialDesignToolForegroundButton}"
+                            Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                            HorizontalAlignment="Left">
+                                        <materialDesign:PackIcon
+                                    Kind="ArrowLeft"
+                                    HorizontalAlignment="Right" />
+                                    </Button>
+                                    <TextBlock
+                                Name="txtblngay"
+                                Margin="100 0 0 0"
+                                FontSize="20"
+                                VerticalAlignment="Center">
+                                    THỐNG KÊ THEO NGÀY
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <Grid Grid.Row="1" Height="180" Width="700">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm tồn :"></TextBlock>
+                                    <TextBlock Grid.Row="1" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm đã bán :"></TextBlock>
+                                    <TextBlock Grid.Row="2" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm đổi trả :"></TextBlock>
+                                    <TextBlock Grid.Row="3" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Doanh thu :"></TextBlock>
+
+                                    <TextBox Name="slton" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="0"></TextBox>
+                                    <TextBox Name="slban" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="1"></TextBox>
+                                    <TextBox Name="sldoitra" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="2"></TextBox>
+                                    <TextBox Name="doanhthu" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="3"></TextBox>
 
 
+                                    <TextBlock Grid.Column="2" Grid.Row="3" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text=" VNĐ"></TextBlock>
+                                </Grid>
+                            </Grid>
+                        </materialDesign:Flipper.BackContent>
+                    </materialDesign:Flipper>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White" Text="Chọn tháng: " Margin="0 0 20 0" FontSize="20"></TextBlock>
+                        <ComboBox SelectionChanged="cbbox_SelectionChanged" Name="cbbox" Width="60" FontSize="15" Foreground="White"></ComboBox>
+                        <TextBlock Visibility="Hidden"  Name="txtboxnam"  Foreground="White" Text="/" Margin="20 0 20 0" FontSize="20"></TextBlock>
+                        <ComboBox Visibility="Hidden"  SelectionChanged="cbboxnam_SelectionChanged"  Name="cbboxnam" Width="60" FontSize="15" Foreground="White"></ComboBox>
+
+                    </StackPanel>
+
+                    <materialDesign:Flipper
+            HorizontalAlignment="Stretch"
+            Grid.Row="1"
+            Style="{StaticResource MaterialDesignCardFlipper}">
+                        <materialDesign:Flipper.FrontContent>
+                            <Button
+                        Name="btnflipperthang"
+                    Height="50"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                    FontSize="25"
+                    Foreground="White">
+                                THỐNG KÊ THEO THÁNG
+                            </Button>
+                        </materialDesign:Flipper.FrontContent>
+                        <materialDesign:Flipper.BackContent>
+                            <Grid Height="230">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="180"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackPanel Background="White" HorizontalAlignment="Stretch" Orientation="Horizontal" Grid.ColumnSpan="3">
+                                    <Button
+                                Width="150"
+                            Style="{StaticResource MaterialDesignToolForegroundButton}"
+                            Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                            HorizontalAlignment="Left">
+                                        <materialDesign:PackIcon
+                                    Kind="ArrowLeft"
+                                    HorizontalAlignment="Right" />
+                                    </Button>
+                                    <TextBlock
+                                Name="txtblthang"
+                                Margin="100 0 0 0"
+                                FontSize="20"
+                                VerticalAlignment="Center">
+                                    THỐNG KÊ THEO THÁNG
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <Grid Grid.Row="1" Height="180" Width="700">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm tồn :"></TextBlock>
+                                    <TextBlock Grid.Row="1" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm đã bán :"></TextBlock>
+                                    <TextBlock Grid.Row="2" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Số lượng sản phẩm đổi trả :"></TextBlock>
+                                    <TextBlock Grid.Row="3" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text="Doanh thu :"></TextBlock>
+
+                                    <TextBox Name="sltonthang" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="0"></TextBox>
+                                    <TextBox Name="slbanthang" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="1"></TextBox>
+                                    <TextBox Name="sldoitrathang" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="2"></TextBox>
+                                    <TextBox Name="doanhthuthang" Text="0" Foreground="White" Grid.Column="1" FontSize="17" VerticalAlignment="Center" Grid.Row="3"></TextBox>
+
+
+                                    <TextBlock Grid.Column="2" Grid.Row="3" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Foreground="White" Text=" VNĐ"></TextBlock>
+                                </Grid>
+                            </Grid>
+                        </materialDesign:Flipper.BackContent>
+                    </materialDesign:Flipper>
+
+                </StackPanel>
+
+
+            </Grid>
+
+        </ScrollViewer>
     </Grid>
 
 </UserControl>

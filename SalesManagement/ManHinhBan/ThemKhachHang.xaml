@@ -5,8 +5,149 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SalesManagement.ManHinhBan"
         mc:Ignorable="d"
-        Title="ThemKhachHang" Height="450" Width="800">
+        Title="Thêm khách hàng" Height="500" Width="600"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="15"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
-        
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Margin="50,50,50,0">
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Mã khách hàng"></TextBlock>
+                <TextBox
+                    Name="txtMaKH"
+                    Grid.Column="1"
+                    materialDesign:HintAssist.Hint="KH012"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Tên khách hàng"></TextBlock>
+                <TextBox
+                    Name="txtTenKH"
+                    Grid.Column="1"
+                    materialDesign:HintAssist.Hint="Nguyễn Văn A"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Giới tính"></TextBlock>
+                <ComboBox Name="cbboxGioiTinh" Grid.Column="1">
+                    <ComboBox.Items>
+                        <ComboBoxItem>Nam</ComboBoxItem>
+                        <ComboBoxItem>Nữ</ComboBoxItem>
+                    </ComboBox.Items>
+                </ComboBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="SĐT"></TextBlock>
+                <TextBox
+                    Name="txtSDT"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Email"></TextBlock>
+                <TextBox
+                    Name="txtEmail"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Địa chỉ"></TextBlock>
+                <TextBox
+                    Name="txtDiaChi"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+        </StackPanel>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button 
+                Name="btnSave"
+                Click="btnSave_Click"
+                Width="150"
+                Style="{DynamicResource MaterialDesignRaisedButton}"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4">
+                Lưu lại
+            </Button>
+
+            <Button
+                Name="btnExit"
+                Click="btnExit_Click"
+                Width="150"
+                Grid.Column="1"
+                Style="{DynamicResource MaterialDesignRaisedButton}"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4">
+                Thoát
+            </Button>
+        </Grid>
+
     </Grid>
 </Window>

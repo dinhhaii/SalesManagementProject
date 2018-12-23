@@ -26,7 +26,6 @@ namespace SalesManagement.ManHinhNhap
     public partial class ChinhSuaSanPham : Window
     {
         public string editMaSP { get; set; }
-        public string temp { get; set; }
         ObservableCollection<SanPham> listSP = new ObservableCollection<SanPham>();
         SqlConnection sqlConnection = null;
         private string strfileName;

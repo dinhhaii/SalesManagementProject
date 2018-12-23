@@ -113,7 +113,7 @@
                     Name="txtTenSP"
                     Grid.Column="1"
                     materialDesign:HintAssist.Hint="Nike Air Force"
-                    VerticalAlignment="Bottom">
+                    VerticalAlignment="Center">
                 </TextBox>
             </Grid>
 
@@ -126,7 +126,7 @@
                 <TextBox
                     Name="txtSoLuong"
                     Grid.Column="1"
-                    VerticalAlignment="Bottom">
+                    VerticalAlignment="Center">
                 </TextBox>
             </Grid>
 
@@ -139,7 +139,7 @@
                 <TextBox
                     Name="txtSize"
                     Grid.Column="1"
-                    VerticalAlignment="Bottom">
+                    VerticalAlignment="Center">
                 </TextBox>
             </Grid>
 
@@ -152,7 +152,7 @@
                 <TextBox
                     Name="txtGia"
                     Grid.Column="1"
-                    VerticalAlignment="Bottom">
+                    VerticalAlignment="Center">
                 </TextBox>
             </Grid>
 

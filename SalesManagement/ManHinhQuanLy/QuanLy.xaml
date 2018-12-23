@@ -23,7 +23,8 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#FF303030">
+    <!--<Grid Background="#FF303030">-->
+    <Grid Background="Yellow">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>

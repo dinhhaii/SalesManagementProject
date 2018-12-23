@@ -354,5 +354,13 @@ namespace SalesManagement.ManHinhNhap
         {
             txtSearch.Text = "";
         }
+
+        private void Label_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            listSP.Clear();
+            getData();
+            DataGridNhap.ItemsSource = null;
+            DataGridNhap.ItemsSource = listSP;
+        }
     }
 }

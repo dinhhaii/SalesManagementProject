@@ -158,7 +158,7 @@ namespace SalesManagement
         {
             Home window = new Home(MaNV);
             loginwindow.Hide();
-            window.ShowDialog();
+            window.Show();
             
         }
 

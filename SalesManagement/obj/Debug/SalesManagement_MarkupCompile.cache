@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\App.xaml
-131664509745
+18858700673
 
-24420361979
+30-952082739
 18180188430
-Home.xaml;MainWindow.xaml;ManHinhBan\Ban.xaml;ManHinhBan\KhuyenMai.xaml;ManHinhBan\ThanhToan.xaml;ManHinhBan\ThemKhachHang.xaml;ManHinhChi\Chi.xaml;ManHinhNhap\ChinhSuaSanPham.xaml;ManHinhNhap\Nhap.xaml;ManHinhNhap\ThemSanPham.xaml;ManHinhQuanLy\QuanLy.xaml;ManHinhThongKe\ThongKe.xaml;ManHinhThu\Thu.xaml;
+Home.xaml;MainWindow.xaml;ManHinhBan\Ban.xaml;ManHinhBan\ChinhSuaKhachHang.xaml;ManHinhBan\KhuyenMai.xaml;ManHinhBan\KhuyenMai1SP.xaml;ManHinhBan\ThanhToan.xaml;ManHinhBan\ThemKhachHang.xaml;ManHinhChi\ChinhSuaChi.xaml;ManHinhChi\TableChi.xaml;ManHinhChi\ThemChi.xaml;ManHinhNhap\ChinhSuaSanPham.xaml;ManHinhNhap\Nhap.xaml;ManHinhNhap\ThemSanPham.xaml;ManHinhQuanLy\QuanLy.xaml;ManHinhThongKe\ThongKe.xaml;ManHinhThu\ThongTinKH_SP.xaml;ManHinhThu\Thu.xaml;
 
 False
 

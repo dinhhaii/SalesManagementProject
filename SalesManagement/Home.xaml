@@ -94,20 +94,13 @@
                     <mhthu:Thu />
                 </TabItem>
                 <TabItem Header="CHI">
-                    <mhchi:Chi />
+                    <mhchi:TableChi />
                 </TabItem>
                 <TabItem Header="THỐNG KÊ">
                     <mhthongke:ThongKe />
                 </TabItem>
                 <TabItem Header="QUẢN LÝ NHÂN SỰ">
-                    <mhquanly:QuanLy />
-                </TabItem>
-                
-                <TabItem>
-                    <TabItem.Header>
-                        <materialDesign:PackIcon Kind="GithubCircle" Foreground="{DynamicResource PrimaryHueLightBrush}"/>
-                    </TabItem.Header>
-                    <TextBlock Text="github.com/Abel13/TabMenu2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <mhquanly:QuanLy Visibility="Collapsed" x:Name="userConTrolQL"/>
                 </TabItem>
             </dragablz:TabablzControl>
         </Grid>

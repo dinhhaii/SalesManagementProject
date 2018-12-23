@@ -36,7 +36,7 @@
 
         <!--<Button  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Click="Button_Click">Refresh</Button>-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
-            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Search" Background="White" Width="200" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
+            <TextBox Name="txtSearch" FontSize="13" materialDesign:HintAssist.Hint=" Tìm kiếm" Background="White" Width="200" Height="25" BorderBrush="#89000000" Margin="0,1" TextChanged="textBox_TextChanged"></TextBox>
             <Button       
                 Name="resetTxtSearch"
                 Height="25"
@@ -239,7 +239,11 @@
                 <TextBlock Name="status" ></TextBlock>
             </StatusBarItem>
         </StatusBar>
-        
+
+        <Label HorizontalAlignment="Left" Margin="10,0,0,0" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown">
+            <materialDesign:PackIcon Kind="Loop">
+            </materialDesign:PackIcon>
+        </Label>
     </Grid>
 
 </UserControl>
