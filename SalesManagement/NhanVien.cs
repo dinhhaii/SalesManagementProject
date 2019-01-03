@@ -16,5 +16,14 @@ namespace SalesManagement
         public string DiaChi { get; set; }
         public double Luong { get; set; }
         public string ViTri { get; set; }
+        private bool isSelected;
+        public bool isChecked
+        {
+            get { return isSelected; }
+            set
+            {
+                isSelected = value;
+            }
+        }
     }
 }

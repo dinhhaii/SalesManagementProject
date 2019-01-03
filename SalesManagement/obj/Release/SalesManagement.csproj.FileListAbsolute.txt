@@ -1,0 +1,158 @@
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.exe.config
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.exe
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\Dragablz.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignColors.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\Dragablz.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\Dragablz.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\Home.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\MainWindow.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\Ban.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ChinhSuaKhachHang.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai1SP.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThanhToan.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThemKhachHang.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ChinhSuaChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\TableChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ThemChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ChinhSuaSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\Nhap.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ThemSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ChinhSuaNV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DangKyLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DiemDanh.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\Luong1Thang1NV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\LyDo.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLy.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLyLuong.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaChiTietLich.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemNhanVien.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThongKe\ThongKe.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\ThongTinKH_SP.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\Thu.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\App.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement_MarkupCompile.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement_MarkupCompile.lref
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\App.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\Home.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\MainWindow.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\Ban.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ChinhSuaKhachHang.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai1SP.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThanhToan.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThemKhachHang.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ChinhSuaChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\TableChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ThemChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ChinhSuaSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\Nhap.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ThemSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ChinhSuaNV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DangKyLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DiemDanh.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\Luong1Thang1NV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\LyDo.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLy.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLyLuong.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaChiTietLich.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemNhanVien.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThongKe\ThongKe.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\ThongTinKH_SP.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\Thu.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.g.resources
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.Properties.Resources.resources
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.GenerateResource.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.CoreCompileInputs.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.CopyComplete
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.exe
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csprojAssemblyReference.cache
+F:\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.exe.config
+F:\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.exe
+F:\SalesManagementProject\SalesManagement\bin\Release\SalesManagement.pdb
+F:\SalesManagementProject\SalesManagement\bin\Release\Dragablz.dll
+F:\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignColors.dll
+F:\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.dll
+F:\SalesManagementProject\SalesManagement\bin\Release\Dragablz.pdb
+F:\SalesManagementProject\SalesManagement\bin\Release\Dragablz.xml
+F:\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.pdb
+F:\SalesManagementProject\SalesManagement\bin\Release\MaterialDesignThemes.Wpf.xml
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csprojAssemblyReference.cache
+F:\SalesManagementProject\SalesManagement\obj\Release\Home.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\MainWindow.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\Ban.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ChinhSuaKhachHang.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai1SP.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThanhToan.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThemKhachHang.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ChinhSuaChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\TableChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ThemChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ChinhSuaSanPham.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\Nhap.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ThemSanPham.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ChinhSuaNV.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DangKyLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DiemDanh.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\Luong1Thang1NV.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\LyDo.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLy.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLyLuong.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaChiTietLich.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemNhanVien.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThongKe\ThongKe.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\ThongTinKH_SP.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\Thu.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\App.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement_MarkupCompile.cache
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement_MarkupCompile.lref
+F:\SalesManagementProject\SalesManagement\obj\Release\App.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\Home.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\MainWindow.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\Ban.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ChinhSuaKhachHang.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\KhuyenMai1SP.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThanhToan.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhBan\ThemKhachHang.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ChinhSuaChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\TableChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhChi\ThemChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ChinhSuaSanPham.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\Nhap.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhNhap\ThemSanPham.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ChinhSuaNV.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DangKyLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\DiemDanh.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\Luong1Thang1NV.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\LyDo.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLy.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\QuanLyLuong.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaChiTietLich.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\SuaLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhQuanLy\ThemNhanVien.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThongKe\ThongKe.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\ThongTinKH_SP.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\ManHinhThu\Thu.baml
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.g.resources
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.Properties.Resources.resources
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.GenerateResource.cache
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.CoreCompileInputs.cache
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.csproj.CopyComplete
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.exe
+F:\SalesManagementProject\SalesManagement\obj\Release\SalesManagement.pdb

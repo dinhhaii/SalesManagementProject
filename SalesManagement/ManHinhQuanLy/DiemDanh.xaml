@@ -1,0 +1,141 @@
+﻿<Window x:Class="SalesManagement.ManHinhQuanLy.DiemDanh"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement.ManHinhQuanLy"
+        mc:Ignorable="d"
+        Title="Điểm danh" Height="500" Width="800"
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Background="#FF303030">
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Grid Height="235">
+                <DataGrid Name="DataGridListEmployeeDD"
+               
+             HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
+            CanUserSortColumns="True"
+            CanUserAddRows="False"
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="True"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+                    <DataGrid.Resources>
+                        <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                            <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <materialDesign:MaterialDataGridTextColumn
+                    Width="350"
+                      FontSize="14"
+                    Binding="{Binding TenNV}"
+                    Header="Ca 1 (6h -14h)"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:MaterialDataGridTextColumn>
+                        <DataGridTemplateColumn  Width="150" Header="">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="CoMat_Click"  Foreground="White">Có mặt</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        
+                        <DataGridTemplateColumn  Width="150" Header="">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="Vang_Click" Foreground="White">Vắng</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,0,0,0" Grid.Row="1">
+            <Grid Height="235">
+                <DataGrid Name="DataGridListEmployeeDDCa2"
+               
+             HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
+            CanUserSortColumns="True"
+            CanUserAddRows="True"
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="True"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+                    <DataGrid.Resources>
+                        <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                            <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.Columns>
+                        <materialDesign:MaterialDataGridTextColumn
+                    Width="350"
+                    FontSize="14"
+                    Binding="{Binding TenNV}"
+                    Header="Ca 2 (14h - 22h)"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                        </materialDesign:MaterialDataGridTextColumn>
+                        <DataGridTemplateColumn  Width="150" Header="">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="CoMatCa2_Click"  Foreground="White">Có mặt</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn  Width="150" Header="">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="VangCa2_Click" Foreground="White">Vắng</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

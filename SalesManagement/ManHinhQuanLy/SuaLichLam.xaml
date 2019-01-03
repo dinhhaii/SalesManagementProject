@@ -1,0 +1,143 @@
+﻿<Window x:Class="SalesManagement.ManHinhQuanLy.SuaLichLam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement.ManHinhNhap"
+        mc:Ignorable="d"
+        Title="SuaLichLam" Height="450" Width="800"   xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid  Background="#FF303030">
+        <DataGrid
+            
+            Name="DataGridLichLam"
+            Grid.ColumnSpan="3" Grid.Row="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
+            CanUserSortColumns="False"
+            CanUserAddRows="False"
+            
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="False"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+
+            <DataGrid.Resources>
+                <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                    <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
+                </Style>
+            </DataGrid.CellStyle>
+
+            <DataGrid.Columns>
+
+              
+
+                <!--CHECKBOX-->
+                <DataGridTemplateColumn 
+                    Header="Ngày làm"
+                    Visibility="Collapsed"
+                    Width="150">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox
+                                x:Name="checkBoxDeleteAll"
+                                Content="Chọn tất cả"
+                                Checked="isCheckedOrUnchecked"
+                                Unchecked="isCheckedOrUnchecked"
+                                HorizontalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox
+                                x:Name="checkBoxDelete"
+                                HorizontalAlignment="Center"
+                                IsChecked="{Binding isChecked, Mode=TwoWay}"
+                                Checked="CheckBox_Checked"
+                                Unchecked="CheckBox_Unchecked"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+
+                </DataGridTemplateColumn>
+
+                <!--Ngày làm-->
+                <DataGridTextColumn
+                    Header="Ngày làm"
+                    Width="350"
+                    Binding="{Binding NgayLam}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </DataGridTextColumn>
+
+              
+                <!--Ca làm-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Width="100"
+                    Binding="{Binding Ca}"
+                    Header="Ca làm"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+               
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button
+            x:Name="btnDeleteLichLam"
+            Click="btnDeleteLichLam_Click"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,25,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Name="icondeletebtn"
+                Kind="Delete"
+                Height="24"
+                Width="24" />
+        </Button>
+        <Button
+            x:Name="btnDelete"
+            Click="btnDelete_Click"
+            Visibility="Collapsed"
+            Grid.Column="1" Grid.Row="1" 
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="Red"
+            Margin="0,0,85,20"
+            Width="50" Height="50"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton">
+            <materialDesign:PackIcon
+                Kind="Delete"
+                Height="24"
+                Width="24" />
+        </Button>
+
+    </Grid>
+</Window>

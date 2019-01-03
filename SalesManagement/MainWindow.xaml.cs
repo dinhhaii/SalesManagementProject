@@ -29,8 +29,9 @@ namespace SalesManagement
         public MainWindow()
         {
             InitializeComponent();
-            txtbox.Text = "duyhau";
-            passwordBox.Password = "123";
+            txtbox.Text = "admin";
+            passwordBox.Password = "1";
+            toggleButton.IsChecked = true;
         }
 
         //Connect to SQL Server

@@ -1,0 +1,78 @@
+﻿<Window x:Class="SalesManagement.ManHinhQuanLy.QuanLyLuong"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement.ManHinhQuanLy"
+        mc:Ignorable="d"
+        Title="Quản lý lương" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid  Background="#FF303030">
+        <DataGrid
+            
+            Name="DataGridLuong"
+            Grid.ColumnSpan="3" Grid.Row="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ColumnWidth="*"
+            CanUserSortColumns="True"
+            CanUserAddRows="False"
+            AutoGenerateColumns="False"
+            ScrollViewer.CanContentScroll="False"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+
+            <DataGrid.Resources>
+                <Style
+                    TargetType="{x:Type DataGridColumnHeader}"
+                    BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                    <Setter
+                        Property="HorizontalAlignment"
+                        Value="Center" />
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="DataGridCell_PreviewMouseLeftButtonDown"></EventSetter>
+                    <Setter Property="Height" Value="40"></Setter>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+                <!--Tên nhân viên-->
+                <DataGridTextColumn
+                    Header="Tên nhân viên"
+                    Width="350"
+                    Binding="{Binding TenNV}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </DataGridTextColumn>
+
+
+                <!--Lương-->
+                <materialDesign:MaterialDataGridTextColumn
+                    Width="100"
+                    Binding="{Binding Luong}"
+                    Header="Lương/h"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}">
+                </materialDesign:MaterialDataGridTextColumn>
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+    </Grid>
+</Window>

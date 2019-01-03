@@ -28,7 +28,7 @@ namespace SalesManagement.ManHinhThongKe
         List<SanPham> listSP = new List<SanPham>();
         List<SP_KH> listSPKH = new List<SP_KH>();
         SqlConnection sqlConnection = null;
-
+        List<KeyValuePair<string, int>> valueList = new List<KeyValuePair<string, int>>();
         public ThongKe()
         {
             InitializeComponent();
@@ -50,7 +50,23 @@ namespace SalesManagement.ManHinhThongKe
             slban.Text = SLSPBan();
             sldoitra.Text = SLSPDoiTra();
             doanhthu.Text = TongDoanhThu();
-
+            
+            for(int i=0;i<listSP.Count;i++)
+            {
+                int SL = 0;
+                for(int j=0;j<listSPKH.Count;j++)
+                {
+                    if(listSP[i].MaSP==listSPKH[j].MaSP)
+                    {
+                        SL = listSPKH[j].SoLuong + SL;
+                    }
+                }
+                valueList.Add(new KeyValuePair<string, int>(listSP[i].TenSP, SL));
+            }
+        
+        
+            //Setting data for column chart
+            columnChart.DataContext = valueList;
             //sltonthang.Text = SLSPTonThang();
             //slbanthang.Text = SLSPBanThang();
             //sldoitrathang.Text = SLSPDoiTraThang();

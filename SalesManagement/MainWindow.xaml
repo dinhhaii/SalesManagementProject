@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SalesManagement"
         mc:Ignorable="d"
         Name="loginwindow"
-        Title="Đăng nhập" Height="450" Width="800"
+        Title="Đăng nhập" Height="400" Width="400"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -28,21 +28,17 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-        
+
     <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--<Image Source="Resource/bg.png" Grid.Row="1" Grid.Column="0" Stretch="Uniform"></Image>-->
+        <Image Source="Resource/bg1.jpg" Grid.Row="1" Grid.Column="0" Stretch="UniformToFill"></Image>
         <Grid Grid.Column="0" Grid.RowSpan="2">
             <StackPanel VerticalAlignment="Center" Width="300">
-                <Image Source="Resource/logo1.jpg" Height="80" ></Image>
+                <Image Source="Resource/logo2.jpg" Height="100" ></Image>
 
                 <Grid Height="50" Width="250">
                     <Grid.ColumnDefinitions>

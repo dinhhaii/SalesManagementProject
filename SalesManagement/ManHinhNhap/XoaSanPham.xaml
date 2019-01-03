@@ -1,0 +1,205 @@
+﻿<Window x:Class="SalesManagement.ManHinhNhap.XoaSanPham"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesManagement.ManHinhNhap"
+        mc:Ignorable="d"
+        Name="xoaSP"
+        Title="Xóa sản phẩm" Height="575" Width="828.723"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="15"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.RowSpan="2" Margin="0,100,0,0">
+            <Grid Height="250">
+                <Grid Width="200" Height="200">
+                    <Border CornerRadius="7" BorderThickness="2" BorderBrush="White">
+                        <Image Source = "/Resource/noimage.png" Name="HinhAnhSP" Width="200" Height="200" ></Image>
+                    </Border>
+                </Grid>
+            </Grid>
+            
+            <StackPanel Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <CheckBox
+                    x:Name="checkBox1"
+                    IsChecked="False"
+                    Margin="10,0,0,10">
+                    Đổi trả
+                </CheckBox>
+                <TextBox
+                    x:Name="txtBoxLyDo"
+                    VerticalAlignment="Top"
+                    Height="50"
+                    AcceptsReturn="True"
+                    TextWrapping="Wrap"
+                    IsEnabled="{Binding IsChecked, ElementName=checkBox1}"
+                    VerticalScrollBarVisibility="Auto"
+                    materialDesign:HintAssist.Hint="Lý do"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="0,86,50,0">
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Mã sản phẩm"></TextBlock>
+                <TextBox
+                    Name="txtMaSP"
+                    Grid.Column="1"
+                    materialDesign:HintAssist.Hint="SP098"
+                    VerticalAlignment="Center">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Tên sản phẩm"></TextBlock>
+                <TextBox
+                    Name="txtTenSP"
+                    Grid.Column="1"
+                    materialDesign:HintAssist.Hint="Nike Air Force"
+                    VerticalAlignment="Bottom">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Số lượng"></TextBlock>
+                <TextBox
+                    Name="txtSoLuong"
+                    Grid.Column="1"
+                    VerticalAlignment="Bottom">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Size"></TextBlock>
+                <TextBox
+                    Name="txtSize"
+                    Grid.Column="1"
+                    VerticalAlignment="Bottom">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Giá"></TextBlock>
+                <TextBox
+                    Name="txtGia"
+                    Grid.Column="1"
+                    VerticalAlignment="Bottom">
+                </TextBox>
+            </Grid>
+
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Ngày nhập"></TextBlock>
+
+                <DatePicker Name="datePicker" Grid.Column="1" VerticalAlignment="Center" ></DatePicker>
+
+            </Grid>
+        </StackPanel>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button 
+                Name="btnDelete"
+                
+                Width="150"
+                Style="{DynamicResource MaterialDesignRaisedButton}"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnDelete_Click">
+                Xóa sản phẩm
+            </Button>
+
+            <Button
+                Name="btnExit"
+                
+                Width="150"
+                Grid.Column="1"
+                Style="{DynamicResource MaterialDesignRaisedButton}"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnExit_Click">
+                Thoát
+            </Button>
+        </Grid>
+        <Grid Grid.ColumnSpan="2" Margin="0,0,0,389" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Chọn sản phẩm muốn xóa:" Height="22" Margin="81,30,558,25" Grid.ColumnSpan="2"></TextBlock>
+            <ComboBox x:Name="comboBox1" Grid.Column="1" Background="Gray" VerticalAlignment="Center" Width="400" SelectionChanged="comboBox1_SelectionChanged"  >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <Image Source="{Binding HinhAnhSP}" Width="20" Height="20"></Image>
+                            <TextBlock Text="{Binding MaSP}" Foreground="Red" FontWeight="Bold"></TextBlock>
+                            <TextBlock Text=" - "></TextBlock>
+                            <TextBlock Text="{Binding TenSP}"></TextBlock>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+        </Grid>
+
+
+    </Grid>
+
+
+</Window>

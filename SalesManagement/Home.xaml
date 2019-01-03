@@ -11,7 +11,7 @@
         xmlns:mhquanly="clr-namespace:SalesManagement.ManHinhQuanLy"
         xmlns:mhthongke="clr-namespace:SalesManagement.ManHinhThongKe"
         mc:Ignorable="d"
-        Title="Home" Height="600" Width="1000"
+        Title="Trang chủ" Height="600" Width="1000"
         x:Name="MyHome"
         Closing="Window_Closing"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -39,7 +39,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
 
-            <TextBlock Text="LOGO IN HERE" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25"></TextBlock>
+            <Image Source="Resource/logo4.png" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
             <materialDesign:Badged
                 Name="position"
                 Badge="Quản lý"
@@ -100,7 +100,9 @@
                     <mhthongke:ThongKe />
                 </TabItem>
                 <TabItem Header="QUẢN LÝ NHÂN SỰ">
-                    <mhquanly:QuanLy Visibility="Collapsed" x:Name="userConTrolQL"/>
+                    <Grid>
+                        <mhquanly:QuanLy Visibility="Collapsed" x:Name="userConTrolQL"/>
+                    </Grid>
                 </TabItem>
             </dragablz:TabablzControl>
         </Grid>

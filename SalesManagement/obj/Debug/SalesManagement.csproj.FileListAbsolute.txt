@@ -1,13 +1,3 @@
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
@@ -22,7 +12,17 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHi
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.g.cs
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
@@ -45,7 +45,17 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHi
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.baml
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
@@ -53,10 +63,203 @@ C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\Sales
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
 C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-C:\Users\DINH HAI\Desktop\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
+F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
+F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
+F:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
+F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
+F:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
+F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
+F:\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ChinhSuaKhachHang.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai1SP.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ChinhSuaChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\TableChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
+F:\SalesManagementProject\SalesManagement\obj\Debug\App.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ChinhSuaKhachHang.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai1SP.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ChinhSuaChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\TableChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
+F:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
+F:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\WPFToolkit.dll
+F:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\WPFToolkit.dll
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.xml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ChinhSuaKhachHang.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai1SP.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ChinhSuaChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\TableChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\App.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement_MarkupCompile.lref
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\App.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\Home.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\Ban.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ChinhSuaKhachHang.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\KhuyenMai1SP.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThanhToan.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhBan\ThemKhachHang.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ChinhSuaChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\TableChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
+C:\Users\DINH HAI\Desktop\SalesManagementProject1\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
+D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
+D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
+D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
+D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\WPFToolkit.dll
+D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
+D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
+D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\SalesManagementProject\SalesManagement\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.xml
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csprojAssemblyReference.cache
 D:\SalesManagementProject\SalesManagement\obj\Debug\Home.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\MainWindow.g.cs
@@ -72,7 +275,17 @@ D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.g.cs
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.g.cs
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.g.cs
@@ -95,7 +308,17 @@ D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhChi\ThemChi.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ChinhSuaSanPham.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\Nhap.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhNhap\ThemSanPham.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ChinhSuaNV.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DangKyLichLam.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\DiemDanh.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\Luong1Thang1NV.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\LyDo.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLy.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\QuanLyLuong.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaChiTietLich.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\SuaLichLam.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemLichLam.baml
+D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhQuanLy\ThemNhanVien.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThongKe\ThongKe.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\ThongTinKH_SP.baml
 D:\SalesManagementProject\SalesManagement\obj\Debug\ManHinhThu\Thu.baml
@@ -103,16 +326,6 @@ D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.g.resources
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.Properties.Resources.resources
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.GenerateResource.cache
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CoreCompileInputs.cache
-D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe.config
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.exe
-D:\SalesManagementProject\SalesManagement\bin\Debug\SalesManagement.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignColors.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\Dragablz.xml
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\SalesManagementProject\SalesManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.csproj.CopyComplete
 D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.exe
+D:\SalesManagementProject\SalesManagement\obj\Debug\SalesManagement.pdb
